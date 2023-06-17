@@ -1,7 +1,6 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "./Leonhard_Euler_-_edit1 (2)"
 ---
 
 Hello there!
