@@ -1,13 +1,15 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "./notebook.jpg"
+socialImage: "./Leonhard_Euler_-_edit1 (2)"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+Hello there!
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/notebook.jpg)
+I'm Nour Alhuda, currently a senior student pursuing a degree in computer science engineering at E-JUST. Although I'm studying engineering, I prefer not to be called an engineer. I completed my high school education at Kafr Elsheikh STEM High School in the class of '20.
 
-_Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi._
+One of my greatest passions is mathematics, which has been a driving force in various aspects of my life. It has provided me with valuable insights and has motivated me to excel. However, you'll get to know more about me through my upcoming blog posts.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+When it comes to social media, my favorite platform is Twitter. It's the place where you'll usually find me, unless Elon Musk has somehow managed to ruin it. Feel free to check out [my Twitter account here 🐦](https://twitter.com/NourAbosen).
+
+If you have any questions or if there's anything else you'd like to know, feel free to ask!
