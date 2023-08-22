@@ -26,7 +26,6 @@ Having studied three other languages before delving into Japanese, I can genuine
 <br/><br/>
 It's captivating to ponder how the logical intricacies of the language have influenced the culture itself. The creation of a language so deeply rooted in symbolism, meaning, and interconnectedness must surely be a testament to the Japanese people's unparalleled creativity. The pursuit of crafting a language that reflects the nuances of existence speaks volumes about the Japanese commitment to expression and understanding.
 <br/><br/>
-<br/><br/>
 In conclusion, dear readers, my journey into the realm of Japanese language has been nothing short of enchanting. The logic that underpins the characters and words, akin to digital circuits, resonates with my analytical thinking. The stories within each character echo Japan's rich cultural tapestry. Japanese is more than just a language; it's an embodiment of a unique way of life, a testament to creativity, commitment, and the art of expression. Would you consider embarking on this linguistic adventure to uncover the profound beauty of Japanese – a language that genuinely paints words with meaning?
 <br/><br/>
 Arigatou gozaimasu for reading, and until next time, sayonara! 🎌
