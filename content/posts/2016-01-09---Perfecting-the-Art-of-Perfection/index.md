@@ -4,7 +4,7 @@ date: "2023-08-22T23:00:37.121Z"
 template: "post"
 draft: false
 slug: "/posts/exploring-the-intricate-beauty-of-japanese"
-category: "Design Inspiration"
+category: "Learning"
 tags:
   - "Languages"
   - "Learning"
