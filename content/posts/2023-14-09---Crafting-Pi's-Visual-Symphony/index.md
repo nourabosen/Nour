@@ -11,7 +11,7 @@ tags:
   - "Beauty"
   - "Python"
 description: "Discovering the beauty of mathematics and artistic expression in my attempt to create Pi's Visual Symphony"
-socialImage: "./media/Pi's Visual Symphony.png"
+socialImage: "./media/PiVisualSymphony.pngg"
 ---
 
 Greetings, fellow math enthusiasts! Today, I'm brimming with excitement as I unveil a captivating project that seamlessly marries my fervour for mathematics with the enigmatic charm of pi (π). While the official Pi Day may have graced us on March 14th, my passion for pi knows no temporal bounds. Thus, I couldn't resist the urge to share and discuss my previous project: visualizing the first 10,000 digits of pi in a way that's both visually stunning and intellectually engaging.
