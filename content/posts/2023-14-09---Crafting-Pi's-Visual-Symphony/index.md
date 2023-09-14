@@ -17,7 +17,7 @@ socialImage: "./media/PiVisualSymphony.png"
 Greetings, fellow math enthusiasts! Today, I'm excited to share a fun project where I combined my love for math and the mysterious number pi (π). Even though Pi Day happened on March 14th, I couldn't wait to show you my project. I created a cool visualization of the first 10,000 digits of pi in a way that looks amazing and is interesting to think about.
 
 ![Pi's Visual Symphony](/media/PiVisualSymphony.png)
-
+<br/><br/>
 Before we plunge into the details of this intriguing project, let's delve briefly into the profound nature of pi itself. Denoted by the Greek letter π, it represents the ratio of a circle's circumference to its diameter and is approximately equal to 3.14. Yet, what makes pi truly extraordinary is its infinite, non-repeating decimal expansion. It defies simple expression as a fraction, and its digits continue indefinitely without forming a predictable pattern. To date, mathematicians have calculated pi's decimal expansion to trillions of digits, fueling an ongoing quest for deeper understanding.<br/><br/>
 
 Now, let's shift our gaze to Pi Day, the annual celebration that transpires on March 14th (3/14 in the month/day date format) This date pays homage to the transcendental mathematical constant and serves as a rallying point for math enthusiasts, students, and educators worldwide. On Pi Day, we revel in the elegance and significance of pi, engaging in a delightful array of activities and discussions centered around this captivating number. It's a day when intriguing facts about pi are shared, mathematical curiosities are explored, and, inevitably, a slice of pie is savored—an homage to the delightful homophonic connection between "pi" and "pie."<br/><br/>
@@ -72,9 +72,7 @@ plt.show()
 What this visualization conveys:
 
 - **Circle Sizes:** The size of each circle reflects the value of the digit from pi. If a digit is the same as the previous one, the circle's size increases by a factor of 5. This creates the illusion of growing circles when the digits change.
-- 
 - **Circle Colors:** The color of each circle is based on the digit's value, with a color map used to map the digits to a range of colors. This adds a vibrant and visually appealing element to the display.
-- 
 - **Positioning:** The circles are positioned in a grid-like fashion, with each circle representing a digit from the pi sequence. As we move from left to right, we progress through the digits, and as we move from top to bottom, we advance to the next row of digits.
 
 <br/><br/>
