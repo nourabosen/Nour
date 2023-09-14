@@ -15,7 +15,7 @@ socialImage: "./media/Pi's Visual Symphony.png"
 ---
 
 Greetings, fellow math enthusiasts! Today, I'm brimming with excitement as I unveil a captivating project that seamlessly marries my fervour for mathematics with the enigmatic charm of pi (π). While the official Pi Day may have graced us on March 14th, my passion for pi knows no temporal bounds. Thus, I couldn't resist the urge to share and discuss my previous project: visualizing the first 10,000 digits of pi in a way that's both visually stunning and intellectually engaging.
-![Pi's Visual Symphony.png)
+![Pi's Visual Symphony.png]
 
 Before we plunge into the details of this intriguing project, let's delve briefly into the profound nature of pi itself. Denoted by the Greek letter π, it represents the ratio of a circle's circumference to its diameter and is approximately equal to 3.14. Yet, what makes pi truly extraordinary is its infinite, non-repeating decimal expansion. It defies simple expression as a fraction, and its digits continue indefinitely without forming a predictable pattern. To date, mathematicians have calculated pi's decimal expansion to trillions of digits, fueling an ongoing quest for deeper understanding.<br/><br/>
 At the heart of my fascination lies the way Japanese characters are meticulously crafted. The process of drawing each character, be it hiragana, katakana, or kanji, indeed feels like a meticulous art form. Take, for instance, the katakana character "fu," which mirrors a mouth opening to pronounce the sound. This graphical representation is more than just writing; it's storytelling through symbols. The characters in Japanese aren't just letters; they're a visual narrative that reflects the essence of words and emotions.
@@ -69,9 +69,13 @@ ax.set_aspect('equal')
 # Show the plot
 plt.show()
 ```
+<br/>
 What this visualization conveys:
+<br/>
 **- Circle Sizes:** The size of each circle reflects the value of the digit from pi. If a digit is the same as the previous one, the circle's size increases by a factor of 5. This creates the illusion of growing circles when the digits change.
+<br/>
 **- Circle Colors:** The color of each circle is based on the digit's value, with a color map used to map the digits to a range of colors. This adds a vibrant and visually appealing element to the display.
+<br/>
 **- Positioning:** The circles are positioned in a grid-like fashion, with each circle representing a digit from the pi sequence. As we move from left to right, we progress through the digits, and as we move from top to bottom, we advance to the next row of digits.
 <br/><br/>
 This visualization project is not just about displaying the digits of pi; it's about transforming abstract mathematical concepts into a form of artistic expression. It's a testament to how mathematics and programming can intersect with creativity and aesthetics. Pi, with its infinite and non-repeating decimal expansion, continues to be a source of wonder and exploration for mathematicians and enthusiasts alike. It's a constant reminder of the depth and complexity that mathematics offers. This visualization project is a reminder that math is not just a subject to be studied but also a canvas on which we can create beautiful works of art.
