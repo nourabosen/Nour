@@ -70,11 +70,8 @@ plt.show()
 ```
 <br/><br/>
 What this visualization conveys:
-<br/><br/><br/>
 **Circle Sizes:** The size of each circle reflects the value of the digit from pi. If a digit is the same as the previous one, the circle's size increases by a factor of 5. This creates the illusion of growing circles when the digits change.
-<br/><br/><br/>
 **Circle Colors:** The color of each circle is based on the digit's value, with a color map used to map the digits to a range of colors. This adds a vibrant and visually appealing element to the display.
-<br/><br/><br/>
 **Positioning:** The circles are positioned in a grid-like fashion, with each circle representing a digit from the pi sequence. As we move from left to right, we progress through the digits, and as we move from top to bottom, we advance to the next row of digits.
 
 <br/><br/>
