@@ -12,9 +12,13 @@
       "label": "Articles",
       "path": "/"
     },
-      {
+    {
       "label": "Projects",
       "path": "/pages/projects"
+    },
+    {
+      "label": "Digital Garden",
+      "path": "/pages/digitalGarden"
     },
     {
       "label": "About me",
