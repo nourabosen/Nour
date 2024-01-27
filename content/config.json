@@ -17,10 +17,6 @@
       "path": "/pages/projects"
     },
     {
-      "label": "Digital Garden",
-      "path": "/pages/digitalGarden"
-    },
-    {
       "label": "About me",
       "path": "/pages/about"
     }
