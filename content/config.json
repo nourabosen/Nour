@@ -20,6 +20,10 @@
       "label": "About me",
       "path": "/pages/about"
     },
+    {
+      "label": "Digital Garden",
+      "path": "https://notes.nourabosen.me/#/page/digital%20garden"
+    },
   ],
   "author": {
     "name": "NOur Abosen",
