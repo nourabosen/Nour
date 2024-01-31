@@ -20,10 +20,6 @@
       "label": "About me",
       "path": "/pages/about"
     },
-    {
-      "label": "Digital Garden",
-      "path": "/pages/DigitalGarden"
-    },
   ],
   "author": {
     "name": "NOur Abosen",
