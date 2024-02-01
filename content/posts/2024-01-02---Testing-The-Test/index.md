@@ -6,8 +6,8 @@ draft: false
 slug: "/posts/testing-test"
 category: "Learning"
 tags:
-"Languages"
-"Learning"
+- "Languages"
+- "Learning"
 description: "A Journey into the Realm of Linguistic Logic and Creative Expression"
 socialImage: "./media/enjoying_1706740722713_0.jpg"
 ---
