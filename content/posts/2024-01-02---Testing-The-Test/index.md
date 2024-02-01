@@ -6,11 +6,11 @@ draft: false
 slug: "/posts/testing-test"
 category: "Learning"
 tags:
-"Languages"
-"Learning"
+- "Languages"
+- "Learning"
 description: "A Journey into the Realm of Linguistic Logic and Creative Expression"
-socialImage: "./media/enjoying.jpg"
--
-![enjoying.jpg](../assets/enjoying_1706740722713_0.jpg){:height 551, :width 780}
+socialImage: "./media/enjoying_1706740722713_0.jpg"
+---
+![enjoying.jpg](/enjoying_1706740722713_0.jpg){:height 551, :width 780}
 # Test 1
 ## Test 2
