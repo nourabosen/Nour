@@ -8,8 +8,8 @@
   tags:
 	- "Languages"
 	- "Learning"
-	  description: "This is another test"
-	  socialImage: "./media/enjoying_1706740722713_0.jpg"
+	description: "This is another test"
+	socialImage: "./media/enjoying_1706740722713_0.jpg"
 ---
 	# Test
 	- ![enjoying_1706740722713_0.jpg](/media/enjoying_1706740722713_0_1706978850799_0.jpg)
