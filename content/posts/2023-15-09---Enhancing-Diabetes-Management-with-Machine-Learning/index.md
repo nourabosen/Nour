@@ -15,7 +15,7 @@ description: "This article provides insights into the project's data collection,
 socialImage: "./media/Diabetes.jpg"
 ---
 
-![Tracking Diabetes](/Diabetes.jpg)
+![Tracking Diabetes](/media/Diabetes.jpg)
 
 ## Introduction
 The Diabetes Tracker project leverages Machine Learning (ML) technology to address the challenge faced by individuals with diabetes in tracking their blood sugar concentrations over extended periods. In this article, we will discuss the methods, experiments, and results of the project, which aims to provide an effective solution for diabetes management.
