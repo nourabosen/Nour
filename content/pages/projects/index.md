@@ -10,3 +10,6 @@ Diabetes tracker project focuses on the development and implementation of machin
 
 ### [Pi's Visualization](https://nourabosen.me/posts/crafting-pi's-visual-symphony)
 As a celebration of Pi Day, I visualized the first 10k digits of Pi as circles, where the size and the colour of the circle depend on the digit value. If it is the same as the previous one, the circle size increases by 5x; otherwise, a new circle is added.
+
+### [Logseq Blogpost Uploader](https://github.com/nourabosen/LogseqBlogpostUploader)
+A Python script designed to automate the uploading of Logseq-written blog posts to a GitHub repository, while also saving a copy in a designated local folder.
