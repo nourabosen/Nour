@@ -6,9 +6,9 @@
   slug: "/posts/man-united-bloody-hell"
   category: "Football"
   tags:
-- "Man United"
-	  description: "Reliving that unforgettable Man United comeback against Lyon! My personal take on that thrilling drama and the belief it's ignited in the team."
-	  socialImage: "./media/Bruno_1745098291580_0.png"
+    - "Man United"
+  description: "Reliving that unforgettable Man United comeback against Lyon! My personal take on that thrilling drama and the belief it's ignited in the team."
+  socialImage: "./media/Bruno_1745098291580_0.png"
 ---
 ![Bruno.png](/media/Bruno_1745098291580_0.png)
 "Take Me Home, United Road. Take me home, United Road, To the place I belong; To Old Trafford, to see United; Take me home, United Road."
