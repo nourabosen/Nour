@@ -10,7 +10,6 @@
 	  description: "Reliving that unforgettable Man United comeback! My personal take on the thrilling drama and the belief it's ignited in the team."
 	  socialImage: "./media/Bruno_1745098291580_0.png"
 ---
-![Bruno.png](/media/Bruno_1745098291580_0.png)
 "Take Me Home, United Road. Take me home, United Road, To the place I belong; To Old Trafford, to see United; Take me home, United Road."
 Yeah, *that* chant. Those words. They're everything, aren't they? They're what you cling to, what inspires the team even when this season has been... well, you know. And they were absolutely pumping through my head during that comeback against Lyon. Seriously, what a match. Unforgettable doesn't even cover it.
 Honestly, where do you even start? The first half was amazing, right? But then that second half... ugh, so frustrating. And then extra time. That damn, *DAMN* extra time. What a complete and utter rollercoaster. I'll be real, when we went 2-4 down, my heart just sank. I totally lost hope for a second. But deep inside, way, way down, there was still just this tiny little spark, maybe 1% faith, that we *could* still do it. And somehow, impossibly, we DID. In the most unbelievable way.
