@@ -1,5 +1,5 @@
 ---
-  title: "Man United - Bloody Hell"
+  title: "Man United, Bloody Hell"
   date: "2025-004-18T11:00:37.121Z"
   template: "post"
   draft: false
