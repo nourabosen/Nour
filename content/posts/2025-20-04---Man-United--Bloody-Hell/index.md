@@ -1,6 +1,6 @@
 ---
   title: "Man United, Bloody Hell"
-  date: "2025-004-18T11:00:37.121Z"
+  date: "2025-04-18T11:00:37.121Z"
   template: "post"
   draft: false
   slug: "/posts/man-united-bloody-hell"
