@@ -24,6 +24,10 @@
       "label": "Digital Garden",
       "path": "nourdigitalgarden.netlify.app"
     },
+      {
+      "label": "Research Papers",
+      "path": "/pages/Research Papers"
+    },  
   ],
   "author": {
     "name": "NOur Abosen",
