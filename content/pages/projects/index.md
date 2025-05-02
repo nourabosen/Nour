@@ -14,7 +14,7 @@ Diabetes tracker project focuses on the development and implementation of machin
 ### [Logseq Blogpost Uploader](https://github.com/nourabosen/LogseqBlogpostUploader)
 A Python script designed to automate the uploading of Logseq-written blog posts to a GitHub repository, while also saving a copy in a designated local folder.
 
-#### [Kindle Highlights Organizer](https://github.com/nourabosen/KindleHighlightsOrganizer)
+### [Kindle Highlights Organizer](https://github.com/nourabosen/KindleHighlightsOrganizer)
 This Python script is designed to parse and organize highlights and notes from a Kindle "My Clippings.txt" file. It extracts the highlights and associated notes, removes duplicates and partial duplicates, and writes the organized content into a new file. The structured output is compatible with outliner note-taking apps like Logseq, Obsidian, Roam Research, and others, making it easy to integrate into your knowledge management workflow.
 
 ### [Pi's Visualization](https://nourabosen.netlify.app/posts/crafting-pi's-visual-symphony)
