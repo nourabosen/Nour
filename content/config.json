@@ -24,10 +24,10 @@
       "label": "Digital Garden",
       "path": "https://nourdigitalgarden.netlify.app/#/page/digital%20garden"
     },
-      {
+    {
       "label": "Research Papers",
       "path": "/pages/papers"
-    },  
+    }
   ],
   "author": {
     "name": "NOur Abosen",
