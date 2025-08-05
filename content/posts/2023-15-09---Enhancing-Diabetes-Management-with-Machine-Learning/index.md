@@ -66,7 +66,7 @@ The best-performing model was (rand + gb)_model when trained using the "Drop 7th
 
 The Diabetes Tracker project demonstrates the potential of Machine Learning in improving diabetes management. By carefully selecting and preprocessing data and employing ensemble learning techniques, the project succeeded in creating models that can predict blood glucose levels more accurately. This advancement has the potential to enhance the quality of life for individuals living with diabetes by providing them with better tools to manage their condition.
 
-[Link to the Diabetes Tracker Project on GitHub](https://github.com/jlifferth/nudge_in_streamlit)
+[Link to the Diabetes Tracker Project on GitHub](https://github.com/nourabosen/DiabetesTracker)
 
 ## References
 
