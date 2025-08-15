@@ -4,6 +4,9 @@ template: "page"
 ---
 
 Here, I showcase my diverse range of creations and endeavors, reflecting my passion for mathematics, technology and innovation.
+### [InsightMiner](https://github.com/nourabosen/InsightMiner)
+InsightMiner is a local Retrieval-Augmented Generation (RAG) system that allows you to search, extract quotes, and summarize insights from your document collection—all without sending data to external servers.
+
 ### [Logseq Blogpost Uploader](https://github.com/nourabosen/LogseqBlogpostUploader)
 A Python script designed to automate the uploading of Logseq-written blog posts to a GitHub repository, while also saving a copy in a designated local folder.
 
@@ -21,3 +24,4 @@ A platform to promote recycling locally by allowing users to trade waste for ite
 
 ### [Maze Solver](https://github.com/nourabosen/MazeSolver)
 A Python program to generate and solve mazes using BFS algorithm.
+
