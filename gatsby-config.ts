@@ -19,8 +19,15 @@ export default {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "content",
-        path: path.resolve("content"),
+        name: "posts",
+        path: path.resolve("content/posts"),
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: path.resolve("content/pages"),
       },
     },
     {
