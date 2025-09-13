@@ -7,17 +7,22 @@ import { Layout } from "@/components/Layout";
 import { Meta } from "@/components/Meta";
 import { Sidebar } from "@/components/Sidebar";
 import { useSiteMetadata } from "@/hooks";
-import { AllMarkdownRemark, PageContext } from "@/types";
+import { Edge, PageContext } from "@/types";
 
 interface Props {
   data: {
-    allMarkdownRemark: AllMarkdownRemark;
+    allMarkdownRemark: {
+      group: Array<{
+        edges: Array<Edge>;
+      }>;
+    };
   };
   pageContext: PageContext;
 }
 
 const IndexTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
-  const { edges } = data.allMarkdownRemark;
+  const { group } = data.allMarkdownRemark;
+  const edges = group.map((g) => g.edges[0]);
 
   return (
     <Layout>
