@@ -29,7 +29,12 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
           </time>
           <span className={styles.divider} />
           <span className={styles.category}>
-            <Link to={edge.node.fields.categorySlug} className={styles.link}>
+            <Link
+              to={edge.node.fields.categorySlug}
+              className={`${styles.link} ${
+                styles[edge.node.frontmatter.category.toLowerCase()]
+              }`}
+            >
               {edge.node.frontmatter.category}
             </Link>
           </span>

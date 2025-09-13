@@ -23,7 +23,7 @@
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px $color-accent;
     }
 
     &:last-child {
@@ -45,19 +45,31 @@
       .category {
         .link {
           font-size: $typographic-small-font-size;
-          color: var(--color-accent);
           font-weight: 600;
           text-transform: uppercase;
-          background-color: var(--color-accent-light);
           padding: 0.25rem 0.5rem;
           border-radius: 4px;
           text-decoration: none;
           transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
+          &.philosophy {
+            background-color: #FFD700;
+            color: #000;
+          }
+
+          &.math {
+            background-color: #9B59B6;
+            color: #fff;
+          }
+
+          &.football {
+            background-color: #E74C3C;
+            color: #fff;
+          }
+
           &:hover,
           &:focus {
-            background-color: var(--color-accent);
-            color: var(--color-white);
+            opacity: 0.8;
           }
         }
       }
