@@ -34,39 +34,3 @@ $layout-width: 1070px;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;
-@use "sass:math";
-@use "sass:color";
-
-// Dark Blue Theme
-$color-dark-blue: #0a192f;
-$color-light-gray: #a8b2d1;
-$color-white: #e6f1ff;
-$color-accent: #64ffda;
-$color-dark-gray: #8892b0;
-
-// Legacy colors (adjust or remove as needed)
-$color-dark: $color-dark-blue;
-$color-dark-cloud: #112240;
-$color-dark-paper: #0a192f;
-$color-white-cloud: $color-light-gray;
-$color-gray: $color-dark-gray;
-$color-blue: $color-accent;
-$color-orange: #ff8c42;
-
-$typographic-root-font-size: 100;
-$typographic-base-font-size: 18px;
-$typographic-small-font-size: 16px;
-$typographic-base-line-height: 1.6;
-$typographic-leading: math.round(18 * math.div($typographic-root-font-size, 100) * $typographic-base-line-height);
-$typographic-font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-
-$button-height: 40px;
-$button-border-radius: 20px;
-
-$layout-post-single-width: 945px;
-$layout-post-width: $layout-post-single-width - 305px;
-
-$layout-width: 1070px;
-$layout-breakpoint-sm: 685px;
-$layout-breakpoint-md: 960px;
-$layout-breakpoint-lg: 1100px;
