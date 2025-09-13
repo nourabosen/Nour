@@ -13,8 +13,6 @@ tags:
 description: "Discovering the beauty of mathematics and artistic expression in my attempt to create Pi's Visual Symphony"
 socialImage: "./media/PiVisualSymphony.png"
 ---
-# Crafting Pi’s Visual Symphony: Where Math Meets Magic
-
 Hello, fellow seekers of beauty in the unexpected!
 
 I’ve always believed that math isn’t just about numbers—it’s about stories. And few stories are as timeless, mysterious, and quietly poetic as that of π.
