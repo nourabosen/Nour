@@ -3,5 +3,11 @@
 
 .layout {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+
+  @include breakpoint-sm {
+    padding: 0 2rem;
+  }
 }
