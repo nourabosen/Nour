@@ -1,28 +1,29 @@
 @use "sass:math";
 @use "sass:color";
 
-// Dark Blue Theme
-$color-dark-blue: #0a192f;
-$color-light-gray: #a8b2d1;
-$color-white: #e6f1ff;
-$color-accent: #64ffda;
-$color-dark-gray: #8892b0;
+// Dark Mode
+$color-dark-background: #121212;
+$color-dark-background-secondary: #1E1E1E;
+$color-dark-text: #E0E0E0;
+$color-dark-text-light: #BDBDBD;
+$color-dark-border: #333333;
+$color-accent: #00E5FF; // Cyan/Teal
+$color-accent-light: rgba($color-accent, 0.1);
 
-// Legacy colors (adjust or remove as needed)
-$color-dark: $color-dark-blue;
-$color-dark-cloud: #112240;
-$color-dark-paper: #0a192f;
-$color-white-cloud: $color-light-gray;
-$color-gray: $color-dark-gray;
-$color-blue: $color-accent;
-$color-orange: #ff8c42;
+// Light Mode
+$color-light-background: #FFFFFF;
+$color-light-background-secondary: #F5F5F5;
+$color-light-text: #333333;
+$color-light-text-light: #666666;
+$color-light-border: #E0E0E0;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 18px;
 $typographic-small-font-size: 16px;
 $typographic-base-line-height: 1.6;
 $typographic-leading: math.round(18 * math.div($typographic-root-font-size, 100) * $typographic-base-line-height);
-$typographic-font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+$typographic-font-family: "Roboto", sans-serif;
+$typographic-header-font-family: "Playfair Display", serif;
 
 $button-height: 40px;
 $button-border-radius: 20px;

@@ -35,18 +35,20 @@ export const query = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
     ) {
-      edges {
-        node {
-          fields {
-            categorySlug
-            slug
-          }
-          frontmatter {
-            description
-            category
-            title
-            date
-            slug
+      group(field: fields___slug) {
+        edges {
+          node {
+            fields {
+              categorySlug
+              slug
+            }
+            frontmatter {
+              description
+              category
+              title
+              date
+              slug
+            }
           }
         }
       }
