@@ -116,16 +116,8 @@ export default {
         ],
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: path.resolve("src/assets/images"),
-      },
-    },
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {
