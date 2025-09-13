@@ -6,17 +6,15 @@ html {
 }
 
 body {
-  background: var(--color-page-background);
-  color: var(--color-typographic-base-font);
+  background: $color-dark-blue;
+  color: $color-light-gray;
   font-family: $typographic-font-family;
   font-size: $typographic-base-font-size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: $typographic-base-line-height;
-  margin: 0 0 0 calc(100vw - 100%);
-  text-rendering: optimizelegibility;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  text-rendering: optimizeLegibility;
 }
 
 h2,
@@ -78,32 +76,21 @@ img {
 }
 
 hr {
-  background-image: linear-gradient(
-    to bottom,
-    transparent 1px,
-    transparent 11px,
-    $color-dark 11px,
-    $color-dark 15px,
-    transparent 15px,
-    transparent 26px
-  );
-  background-size: 100% 26px;
+  background-color: $color-light-gray;
   border: 0;
-  color: var(--color-typographic-base-font);
-  display: block;
-  height: 26px;
-  margin: 52px auto;
-  width: 100px;
+  height: 1px;
+  margin: 2rem 0;
 }
 
 a {
-  color: var(--color-typographic-link-p-font);
+  color: $color-accent;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    color: var(--color-typographic-link-s-font);
+    color: $color-white;
   }
 }
 
