@@ -43,8 +43,6 @@
 
 @include breakpoint-sm {
   .page {
-    lost-column: 7/12;
-
     .inner {
       @include padding(1.25, 0.75, 0);
     }
@@ -53,8 +51,6 @@
 
 @include breakpoint-md {
   .page {
-    lost-column: 2/3;
-
     .inner {
       @include padding(1.5, 1, 0);
     }
