@@ -4,6 +4,7 @@ import { Feed } from "@/components/Feed";
 import { Page } from "@/components/Page";
 import { Pagination } from "@/components/Pagination";
 import { Edge, PageContext } from "@/types";
+import Hero from "../Hero/Hero";
 
 import * as styles from "./Home.module.scss";
 
@@ -18,12 +19,7 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
 
   return (
     <div className={styles.home}>
-      <div className={styles.hero}>
-        <h1 className={styles.title}>NOur Abosen</h1>
-        <p className={styles.tagline}>
-          A devoted dreamer, unwavering in her pursuit of illusions.
-        </p>
-      </div>
+      <Hero />
       <Page>
         <Feed edges={edges} />
         <Pagination
