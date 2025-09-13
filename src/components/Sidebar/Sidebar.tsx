@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useSiteMetadata } from "@/hooks";
+import { Hamburger } from "@/components/Hamburger";
 
 import { Author } from "./Author";
 import { Contacts } from "./Contacts";
@@ -15,9 +16,15 @@ type Props = {
 
 const Sidebar = ({ isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div className={styles.sidebar}>
+    <div className={`${styles.sidebar} ${isOpen ? styles.isOpen : ""}`}>
+      <Hamburger isOpen={isOpen} onClick={toggleMenu} />
       <div className={styles.inner}>
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />

@@ -2,56 +2,24 @@
 @import "../../../assets/scss/mixins";
 
 .menu {
-  position: sticky;
-  top: 0;
-  background-color: $color-dark-blue;
-  z-index: 1000;
-  padding: 1rem;
-  transition: top 0.3s;
-
   .list {
-    display: flex;
-    justify-content: center;
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 
     .item {
-      margin: 0 1rem;
+      padding: 0;
+      margin: 10px 0;
 
       .link {
-        color: $color-light-gray;
-        font-size: $typographic-base-font-size;
-        font-weight: normal;
+        font-size: 1.2rem;
+        color: var(--color-text);
         text-decoration: none;
-        position: relative;
-        transition: color 0.3s;
-
-        &:after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          transform: scaleX(0);
-          height: 2px;
-          bottom: -5px;
-          left: 0;
-          background-color: $color-accent;
-          transform-origin: bottom right;
-          transition: transform 0.25s ease-out;
-        }
+        transition: color 0.3s ease-in-out;
 
         &:hover,
-        &:focus {
-          color: $color-accent;
-
-          &:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-        }
-
         &.active {
-          color: $color-accent;
+          color: var(--color-accent);
         }
       }
     }
