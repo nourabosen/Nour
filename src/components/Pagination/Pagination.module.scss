@@ -5,47 +5,38 @@
 
 .pagination {
   display: flex;
-  @include margin-top(2);
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 
-  .previous {
-    text-align: left;
-    width: 50%;
-
-    .previousLink {
-      color: var(--color-secondary);
-      font-size: 26px;
-      font-weight: bold;
+  .previous,
+  .next {
+    .previousLink,
+    .nextLink {
+      color: $color-light-gray;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 1px solid $color-light-gray;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
       &:hover,
       &:focus {
-        color: var(--color-primary);
+        background-color: $color-accent;
+        color: $color-dark-blue;
+        border-color: $color-accent;
       }
 
       &.disable {
-        color: $color-dark-cloud;
+        color: $color-dark-gray;
+        border-color: $color-dark-gray;
         pointer-events: none;
       }
     }
   }
 
-  .next {
-    text-align: right;
-    width: 50%;
-
-    .nextLink {
-      color: var(--color-secondary);
-      font-size: 26px;
-      font-weight: bold;
-
-      &:hover,
-      &:focus {
-        color: var(--color-primary);
-      }
-
-      &.disable {
-        color: $color-dark-cloud;
-        pointer-events: none;
-      }
-    }
+  .previous {
+    margin-right: 1rem;
   }
 }
