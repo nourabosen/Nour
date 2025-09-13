@@ -6,8 +6,8 @@ html {
 }
 
 body {
-  background: $color-dark-blue;
-  color: $color-light-gray;
+  background: linear-gradient(180deg, $color-dark-background, $color-dark-background-secondary);
+  color: $color-dark-text;
   font-family: $typographic-font-family;
   font-size: $typographic-base-font-size;
   -webkit-font-smoothing: antialiased;
@@ -23,8 +23,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $typographic-font-family;
-  font-weight: 600;
+  font-family: $typographic-header-font-family;
+  font-weight: 700;
+  color: $color-accent;
 }
 
 h1 {
@@ -85,12 +86,13 @@ hr {
 a {
   color: $color-accent;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    color: $color-white;
+    color: $color-accent-secondary;
+    text-shadow: 0 0 10px $color-accent;
   }
 }
 
