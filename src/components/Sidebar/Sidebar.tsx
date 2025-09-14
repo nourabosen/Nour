@@ -15,7 +15,7 @@ type Props = {
 };
 
 const Sidebar = ({ isIndex }: Props) => {
-  const { author, copyright, menu } = useSiteMetadata();
+  const { copyright, menu } = useSiteMetadata();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,9 +26,9 @@ const Sidebar = ({ isIndex }: Props) => {
     <div className={`${styles.sidebar} ${isOpen ? styles.isOpen : ""}`}>
       <Hamburger isOpen={isOpen} onClick={toggleMenu} />
       <div className={styles.inner}>
-        <Author author={author} isIndex={isIndex} />
+        <Author isIndex={isIndex} />
         <Menu menu={menu} />
-        <Contacts contacts={author.contacts} />
+        <Contacts />
         <Copyright copyright={copyright} />
       </div>
     </div>

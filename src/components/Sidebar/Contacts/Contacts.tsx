@@ -4,20 +4,20 @@ import { atob } from "abab";
 
 import { Icon } from "@/components/Icon";
 import { ICONS } from "@/constants";
-import { Dictionary } from "@/types";
+import { useSiteMetadata } from "@/hooks";
 import { getContactHref, getIcon } from "@/utils";
 
 import * as styles from "./Contacts.module.scss";
 
-type Props = {
-  contacts: Dictionary<string>;
-};
+const Contacts: React.FC = () => {
+  const { author } = useSiteMetadata();
+  const { contacts } = author;
 
-const Contacts: React.FC<Props> = ({ contacts }: Props) => (
-  <div className={styles.contacts}>
-    <ul className={styles.list}>
-      {(Object.keys(contacts) as Array<keyof typeof ICONS>).map((name) =>
-        contacts[name] ? (
+  return (
+    <div className={styles.contacts}>
+      <ul className={styles.list}>
+        {(Object.keys(contacts) as Array<keyof typeof ICONS>).map((name) =>
+          contacts[name] ? (
           <li className={styles.item} key={name}>
             {name === "email" ? (
               <span
@@ -44,6 +44,6 @@ const Contacts: React.FC<Props> = ({ contacts }: Props) => (
       )}
     </ul>
   </div>
-);
+)};
 
 export default Contacts;

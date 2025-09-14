@@ -15,11 +15,12 @@ interface Props {
 
 const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
   const { pagination } = pageContext;
-  const { hasNextPage, hasPrevPage, prevPagePath, nextPagePath } = pagination;
+  const { hasNextPage, hasPrevPage, prevPagePath, nextPagePath, currentPage } =
+    pagination;
 
   return (
     <div className={styles.home}>
-      <Hero />
+      {currentPage === 0 && <Hero />}
       <Page>
         <Feed edges={edges} />
         <Pagination

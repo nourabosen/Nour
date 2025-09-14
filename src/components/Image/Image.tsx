@@ -1,13 +1,18 @@
 import React from "react";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 interface Props {
-  image: IGatsbyImageData;
   alt: string;
+  className?: string;
+  path: string;
 }
 
-const Image: React.FC<Props> = ({ image, alt }) => (
-  <GatsbyImage image={image} alt={alt} />
-);
+const Image: React.FC<Props> = ({ alt, className, path }: Props) => {
+  const image = getImage(path);
+
+  return image ? (
+    <GatsbyImage image={image} alt={alt} className={className} />
+  ) : null;
+};
 
 export default Image;

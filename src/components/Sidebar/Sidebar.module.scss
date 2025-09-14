@@ -30,33 +30,8 @@
   }
 }
 
-@include breakpoint-sm {
-  .sidebar {
-    lost-column: 5/12;
-
-    .inner {
-      display: block;
-      @include padding(1.25, 0.75, 0);
-
-      &:after {
-        bottom: 0;
-        content: "";
-        height: 540px;
-        position: absolute;
-        right: -10px;
-        top: 30px;
-        width: 1px;
-      }
-    }
-  }
-}
-
 @include breakpoint-md {
   .sidebar {
-    lost-column: 1/3;
-
-    .inner {
-      @include padding-equal(1.5);
-    }
+    display: none;
   }
 }
