@@ -7,13 +7,13 @@ import * as styles from "./Button.module.scss";
 
 interface Props {
   className?: string;
-  title: string;
+  children: React.ReactNode;
   to: string;
 }
 
-const Button: React.FC<Props> = ({ className, title, to }: Props) => (
+const Button: React.FC<Props> = ({ className, children, to }: Props) => (
   <Link className={cn(styles.button, className)} to={to}>
-    {title}
+    {children}
   </Link>
 );
 
