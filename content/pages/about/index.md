@@ -33,3 +33,8 @@ Kafr Elsheikh STEM School
 
 ### Skills
 Python | Machine Learning | Generative AI | NLP | Reinforcement Learning | LaTeX | Team-Work | Critical Thinking | Problem Solving | Research | Knowledge Sharing
+
+---
+
+A devoted dreamer, unwavering in her pursuit of illusions.
+[NOur Abosen on Twitter](https://www.twitter.com/NourAbosen)

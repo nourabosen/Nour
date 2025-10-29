@@ -24,7 +24,7 @@ const Post: React.FC<Props> = ({ post }: Props) => {
   return (
     <div className={styles.post}>
       <div className={styles.buttons}>
-        <Button className={styles.buttonArticles} title="All Articles" to="/" />
+        <Button className={styles.buttonArticles} to="/">All Articles</Button>
         <ThemeSwitcher />
       </div>
 
@@ -35,7 +35,6 @@ const Post: React.FC<Props> = ({ post }: Props) => {
       <div className={styles.footer}>
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-        <Author />
       </div>
 
       <div className={styles.comments}>

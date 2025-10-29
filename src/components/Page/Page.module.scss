@@ -3,6 +3,7 @@
 
 .page {
   @include margin-bottom(2);
+  text-align: center;
 
   .inner {
     @include padding(1, 0.75, 0);

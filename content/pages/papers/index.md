@@ -9,3 +9,8 @@ Presenting a deep learning framework for open-vocabulary EEG-to-text decoding, i
 
 ### [Diabetes Tracker](https://ieeexplore.ieee.org/abstract/document/10479629)
 Diabetes tracker project focuses on the development and implementation of machine learning models for predicting diabetic blood glucose levels. By creating a reliable prediction model, individuals are strived to empower  with diabetes to take proactive control of their health.
+
+---
+
+A devoted dreamer, unwavering in her pursuit of illusions.
+[NOur Abosen on Twitter](https://www.twitter.com/NourAbosen)
