@@ -1,0 +1,155 @@
+@import "../variables";
+@import "../mixins";
+
+html {
+  font-size: $typographic-root-font-size;
+}
+
+body {
+  background: linear-gradient(180deg, $color-dark-background, $color-dark-background-secondary);
+  color: $color-dark-text;
+  font-family: $typographic-font-family;
+  font-size: $typographic-base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: $typographic-base-line-height;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $typographic-header-font-family;
+  font-weight: 700;
+  color: $color-accent;
+}
+
+h1 {
+  font-size: $typographic-base-font-size * 2.5;
+  @include line-height(2);
+  @include margin-top(4);
+  @include margin-bottom(1);
+}
+
+h2 {
+  font-size: $typographic-base-font-size * 1.6875;
+  @include line-height(1.5);
+  @include margin-top(2);
+  @include margin-bottom(0.5);
+}
+
+h3 {
+  font-size: $typographic-base-font-size * 1.375;
+  @include line-height(1);
+  @include margin-top(2);
+  @include margin-bottom(0.5);
+}
+
+h4 {
+  font-size: $typographic-base-font-size * 1.2;
+  @include line-height(1);
+  @include margin-top(1.5);
+  @include margin-bottom(0.5);
+}
+
+h5 {
+  font-size: $typographic-base-font-size;
+  @include line-height(1);
+  @include margin-top(2.5);
+  @include margin-bottom(0.5);
+}
+
+h6 {
+  font-size: $typographic-base-font-size;
+  @include line-height(1);
+  @include margin-top(2.5);
+  @include margin-bottom(0.5);
+}
+
+img {
+  border: 0;
+  display: block;
+  max-width: 100%;
+}
+
+hr {
+  background-color: $color-light-gray;
+  border: 0;
+  height: 1px;
+  margin: 2rem 0;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-accent-secondary;
+    text-shadow: 0 0 10px $color-accent;
+  }
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style: square;
+  @include margin-bottom(1);
+
+  & li {
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+}
+
+p {
+  @include line-height(1);
+  @include margin-bottom(1);
+}
+
+blockquote {
+  font-style: italic;
+  padding: 0;
+  text-align: center;
+}
+
+figure {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+figcaption {
+  @include line-height(0.75);
+  @include margin-top(0.25);
+  color: var(--color-typographic-base-font);
+  font-size: $typographic-small-font-size;
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@include breakpoint-sm {
+  figure.float-left,
+  figure.float-right {
+    max-width: 310px;
+    @include padding(0, 1, 0, 1);
+  }
+
+  .float-right {
+    float: right;
+  }
+
+  .float-left {
+    float: left;
+  }
+}

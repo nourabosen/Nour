@@ -1,0 +1,15 @@
+@use "sass:color";
+@import "../variables";
+
+:root.dark {
+  --color-background: #{$color-dark-background};
+  --color-background-secondary: #{$color-dark-background-secondary};
+  --color-text: #{$color-dark-text};
+  --color-text-light: #{$color-dark-text-light};
+  --color-border: #{$color-dark-border};
+  --color-primary: #{$color-accent};
+  --color-secondary: #{$color-accent};
+  --color-accent: #{$color-accent};
+  --color-accent-light: #{$color-accent-light};
+  --color-white: #{$color-dark-text};
+}

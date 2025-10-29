@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.button {
+  background: linear-gradient(90deg, $color-accent, $color-accent-secondary);
+  border: none;
+  border-radius: $button-border-radius;
+  color: $color-white;
+  display: inline-block;
+  font-size: $typographic-base-font-size;
+  font-weight: bold;
+  height: $button-height;
+  line-height: $button-height;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  @include padding(0, 1.5);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 15px $color-accent;
+  }
+}

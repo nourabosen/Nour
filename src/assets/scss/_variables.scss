@@ -1,0 +1,51 @@
+@use "sass:math";
+@use "sass:color";
+
+// Dark Mode
+$color-dark-background: #0D1117;
+$color-dark-background-secondary: #161B22;
+$color-dark-text: #C9D1D9;
+$color-dark-text-light: #8B949E;
+$color-dark-border: #30363D;
+$color-accent: #58A6FF; // Vibrant Blue
+$color-accent-secondary: #C678DD; // Vibrant Purple
+$color-accent-light: rgba($color-accent, 0.1);
+
+// Light Mode
+$color-light-background: #FFFFFF;
+$color-light-background-secondary: #F6F8FA;
+$color-light-text: #24292E;
+$color-light-text-light: #586069;
+$color-light-border: #D1D5DA;
+
+// Legacy Colors
+$color-blue: $color-accent;
+$color-orange: #ff8c42;
+$color-dark-blue: #0a192f;
+$color-light-gray: #a8b2d1;
+$color-white: #e6f1ff;
+$color-dark-gray: #8892b0;
+$color-dark: $color-dark-blue;
+$color-dark-cloud: #112240;
+$color-dark-paper: #0a192f;
+$color-white-cloud: $color-light-gray;
+$color-gray: $color-dark-gray;
+
+$typographic-root-font-size: 100;
+$typographic-base-font-size: 18px;
+$typographic-small-font-size: 16px;
+$typographic-base-line-height: 1.6;
+$typographic-leading: math.round(18 * math.div($typographic-root-font-size, 100) * $typographic-base-line-height);
+$typographic-font-family: "Roboto", sans-serif;
+$typographic-header-font-family: "Playfair Display", serif;
+
+$button-height: 40px;
+$button-border-radius: 20px;
+
+$layout-post-single-width: 945px;
+$layout-post-width: $layout-post-single-width - 305px;
+
+$layout-width: 1070px;
+$layout-breakpoint-sm: 685px;
+$layout-breakpoint-md: 960px;
+$layout-breakpoint-lg: 1100px;

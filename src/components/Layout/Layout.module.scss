@@ -1,0 +1,13 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+
+  @include breakpoint-sm {
+    padding: 0 2rem;
+  }
+}

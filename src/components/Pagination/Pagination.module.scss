@@ -1,0 +1,42 @@
+@use "sass:color";
+
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  .previous,
+  .next {
+    .previousLink,
+    .nextLink {
+      color: $color-light-gray;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 1px solid $color-light-gray;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: $color-accent;
+        color: $color-dark-blue;
+        border-color: $color-accent;
+      }
+
+      &.disable {
+        color: $color-dark-gray;
+        border-color: $color-dark-gray;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .previous {
+    margin-right: 1rem;
+  }
+}

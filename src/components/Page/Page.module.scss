@@ -1,0 +1,58 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.page {
+  @include margin-bottom(2);
+
+  .inner {
+    @include padding(1, 0.75, 0);
+  }
+
+  .title {
+    font-size: $typographic-base-font-size * 2.5;
+    font-weight: 600;
+    @include line-height(2);
+    @include margin-top(0);
+    @include margin-bottom(1.45);
+  }
+
+  .body {
+    font-size: $typographic-base-font-size;
+    @include line-height(1);
+    @include margin(0, 0, 1);
+
+    .projectGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+
+      .project {
+        background-color: $color-dark-cloud;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint-sm {
+  .page {
+    .inner {
+      @include padding(1.25, 0.75, 0);
+    }
+  }
+}
+
+@include breakpoint-md {
+  .page {
+    .inner {
+      @include padding(1.5, 1, 0);
+    }
+  }
+}

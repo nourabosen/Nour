@@ -1,0 +1,37 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.sidebar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+
+  .inner {
+    display: none;
+    @include padding(1, 0.75, 0);
+    position: relative;
+
+    &:after {
+      background: var(--color-sidebar-border);
+      background: linear-gradient(
+        to bottom,
+        var(--color-sidebar-border) 0%,
+        var(--color-sidebar-border) 48%,
+        var(--color-sidebar-border-fade) 100%
+      );
+    }
+  }
+
+  &.isOpen {
+    .inner {
+      display: block;
+    }
+  }
+}
+
+@include breakpoint-md {
+  .sidebar {
+    display: none;
+  }
+}

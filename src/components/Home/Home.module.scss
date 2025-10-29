@@ -1,0 +1,23 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.home {
+  padding-top: 100vh;
+
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: $color-white;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: $color-light-gray;
+    }
+  }
+}
