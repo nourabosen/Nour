@@ -38,18 +38,23 @@
 
   .right {
     .bio {
-      color: var(--color-text-light);
+      color: #9aa5b1;
       font-size: 0.9rem;
       margin-left: 1rem;
+      text-align: center;
 
       .twitter {
-        color: var(--color-primary);
+        color: #9aa5b1;
         margin-left: 0.5rem;
+
+        &:hover {
+          color: #1da1f2;
+        }
       }
     }
 
     .copyright {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: var(--color-text-light);
       margin-left: 1rem;
     }
