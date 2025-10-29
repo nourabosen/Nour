@@ -19,17 +19,10 @@ interface Props {
 const Post: React.FC<Props> = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date, thumbnail } = post.frontmatter;
+  const { tags, title, date } = post.frontmatter;
 
   return (
     <div className={styles.post}>
-      {thumbnail && (
-        <img
-          src={thumbnail.publicURL}
-          className={styles.thumbnail}
-          alt={title}
-        />
-      )}
       <div className={styles.buttons}>
         <Button className={styles.buttonArticles} to="/">All Articles</Button>
         <ThemeSwitcher />
