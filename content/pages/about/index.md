@@ -3,7 +3,6 @@ title: "About me"
 template: "page"
 ---
 
-<<<<<<< HEAD
 Hello there!
 
 I'm Nour Alhuda, and I've just graduated with a degree in computer science engineering at E-JUST. But I prefer not to be called an engineer. I completed my high school education at Kafr Elsheikh STEM High School in the class of '20.
@@ -12,7 +11,7 @@ One of my greatest passions is mathematics, which has been a driving force in va
 
 When it comes to social media, my favourite platform is Twitter. It's the place where you'll usually find me, unless Elon Musk has somehow managed to ruin it. Feel free to check out my Twitter account [here 🐦](https://twitter.com/NourAbosen). And oops, he ruined it.
 If you have any questions or would like to know anything else, please don't hesitate to ask.
-=======
+
 My passion for mathematics has been the driving force behind both my personal and academic journey. It shapes the way I think, guides the choices I make, and continuously fuels my pursuit of knowledge and innovation. To me, mathematics is not merely a subject but a framework for reasoning, discovery, and problem-solving that extends to every aspect of my life. And by the way, I'm a computer engineer.
 
 ### Education
@@ -34,4 +33,3 @@ Kafr Elsheikh STEM School
 
 ### Skills
 Python | Machine Learning | Generative AI | NLP | Reinforcement Learning | LaTeX | Team-Work | Critical Thinking | Problem Solving | Research | Knowledge Sharing
->>>>>>> main
