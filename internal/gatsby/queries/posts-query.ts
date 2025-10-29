@@ -25,7 +25,9 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
               title
               slug
               template
-              thumbnail
+              thumbnail {
+                publicURL
+              }
             }
             fields {
               slug

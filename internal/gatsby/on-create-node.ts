@@ -13,24 +13,18 @@ const onCreateNode: GatsbyNode["onCreateNode"] = ({
   const { createNodeField } = actions;
 
   if (node.internal.type === "MarkdownRemark") {
-    const { frontmatter, parent }: types.Edge["node"] = node;
-    const { tags, category, slug } = frontmatter || {};
+    const { frontmatter }: types.Edge["node"] = node;
+    const { tags, category } = frontmatter || {};
 
-    if (slug) {
-      const dirname = parent && getNode(parent)?.relativeDirectory;
-      const value =
-        typeof dirname === "string"
-          ? utils.concat("/", dirname, "/", slug)
-          : utils.concat("/", slug);
-
-      createNodeField({ node, name: "slug", value });
-    } else {
-      const value = createFilePath({ node, getNode });
-      createNodeField({ node, name: "slug", value });
-    }
+    const value = frontmatter?.slug || createFilePath({ node, getNode });
+    createNodeField({
+      node,
+      name: "slug",
+      value,
+    });
 
     if (tags) {
-      const value = tags.map((tag) =>
+      const tagSlugs = tags.map((tag) =>
         utils.concat(
           constants.routes.tagRoute,
           "/",
@@ -39,18 +33,18 @@ const onCreateNode: GatsbyNode["onCreateNode"] = ({
         ),
       );
 
-      createNodeField({ node, name: "tagSlugs", value });
+      createNodeField({ node, name: "tagSlugs", value: tagSlugs });
     }
 
     if (category) {
-      const value = utils.concat(
+      const categorySlug = utils.concat(
         constants.routes.categoryRoute,
         "/",
         utils.toKebabCase(category),
         "/",
       );
 
-      createNodeField({ node, name: "categorySlug", value });
+      createNodeField({ node, name: "categorySlug", value: categorySlug });
     }
   }
 };
