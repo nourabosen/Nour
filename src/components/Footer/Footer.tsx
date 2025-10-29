@@ -17,12 +17,20 @@ const Footer = () => {
       <div className={styles.inner}>
         <div className={styles.content}>
           <div className={styles.left}>
+            <h3>Quick Links</h3>
             <Menu menu={menu} />
           </div>
-          <div className={styles.right}>
+          <div className={styles.center}>
+            <h3>Follow Me</h3>
             <Contacts />
-            <Copyright copyright={copyright} />
           </div>
+          <div className={styles.right}>
+            <h3>About Me</h3>
+            <p>{author.bio}</p>
+          </div>
+        </div>
+        <div className={styles.copyright}>
+          <Copyright copyright={copyright} />
         </div>
       </div>
     </footer>
