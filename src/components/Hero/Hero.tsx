@@ -29,7 +29,7 @@ const Hero = () => {
       <p className={styles.tagline}>
         A devoted dreamer, unwavering in her pursuit of illusions.
       </p>
-      <Button to="/articles">Explore Articles</Button>
+      <Button to="/">Explore Articles</Button>
     </div>
   );
 };

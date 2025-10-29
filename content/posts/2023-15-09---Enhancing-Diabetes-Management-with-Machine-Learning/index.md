@@ -8,9 +8,9 @@ category: "Machine Learning"
 tags:
   - "Linear Regression"
   - "Random Forest Regressor"
-  - Gradient Boosting Regressor"
-  - Elastic Net Regression"
-  - Support Vector Regression"
+  - "Gradient Boosting Regressor"
+  - "Elastic Net Regression"
+  - "Support Vector Regression"
 description: "This article provides insights into the project's data collection, preprocessing, feature selection, and the performance of various machine learning algorithms. Explore the results and find out which model and training approach emerged as the most effective, potentially offering improved diabetes management tools."
 thumbnail: "./media/Diabetes.jpg"
 ---

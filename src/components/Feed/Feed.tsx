@@ -13,15 +13,17 @@ type Props = {
 const Feed: React.FC<Props> = ({ edges }: Props) => (
   <div className={styles.feed}>
     {edges.map((edge) => (
-      <div className={styles.item} key={edge.node.fields.slug}>
+      <Link
+        to={edge.node.frontmatter?.slug || edge.node.fields.slug}
+        key={edge.node.fields.slug}
+        className={styles.item}
+      >
         {edge.node.frontmatter.thumbnail && (
-          <Link to={edge.node.frontmatter?.slug || edge.node.fields.slug}>
-            <img
-              src={edge.node.frontmatter.thumbnail.publicURL}
-              className={styles.thumbnail}
-              alt={edge.node.frontmatter.title}
-            />
-          </Link>
+          <img
+            src={edge.node.frontmatter.thumbnail.publicURL}
+            className={styles.thumbnail}
+            alt={edge.node.frontmatter.title}
+          />
         )}
         <div className={styles.meta}>
           <time
@@ -65,7 +67,7 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
         >
           Read
         </Link>
-      </div>
+      </Link>
     ))}
   </div>
 );
