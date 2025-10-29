@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useSiteMetadata } from "@/hooks";
+import { getContactHref } from "@/utils";
 
 import { Contacts } from "@/components/Sidebar/Contacts";
 import { Copyright } from "@/components/Sidebar/Copyright";
@@ -19,7 +20,18 @@ const Footer = () => {
             <Menu menu={menu} />
           </div>
           <div className={styles.right}>
-            <Contacts contacts={author.contacts} />
+            <Contacts />
+            <p className={styles.bio}>
+              {author.bio}
+              <a
+                className={styles.twitter}
+                href={getContactHref("twitter", author.contacts.twitter)}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <strong>{author.name}</strong> on Twitter
+              </a>
+            </p>
             <Copyright copyright={copyright} />
           </div>
         </div>

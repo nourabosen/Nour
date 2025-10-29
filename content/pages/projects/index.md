@@ -31,8 +31,3 @@ Developed a comprehensive **Maze Solver** program in **Python** capable of gener
 
 ### [Trashful](https://trashful.wixsite.com/application)
 Co-developed **Trashful**, a local recycling incentive platform that successfully promoted community engagement by implementing a **gamified point-exchange system** for traded waste materials.
-
----
-
-A devoted dreamer, unwavering in her pursuit of illusions.
-[NOur Abosen on Twitter](https://www.twitter.com/NourAbosen)

@@ -36,4 +36,27 @@
     margin-bottom: 2.5rem;
     z-index: 2;
   }
+
+  .button {
+    background: linear-gradient(90deg, $color-accent, $color-accent-secondary);
+    border: none;
+    border-radius: $button-border-radius;
+    color: $color-white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $typographic-base-font-size;
+    font-weight: bold;
+    height: $button-height;
+    line-height: $button-height;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    @include padding(0, 1.5);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 15px $color-accent;
+    }
+  }
 }

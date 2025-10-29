@@ -37,6 +37,17 @@
   }
 
   .right {
+    .bio {
+      color: var(--color-text-light);
+      font-size: 0.9rem;
+      margin-left: 1rem;
+
+      .twitter {
+        color: var(--color-primary);
+        margin-left: 0.5rem;
+      }
+    }
+
     .copyright {
       font-size: 0.9rem;
       color: var(--color-text-light);

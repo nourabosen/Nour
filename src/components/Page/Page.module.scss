@@ -5,8 +5,8 @@
   @include margin-bottom(2);
 
   .inner {
-    max-width: 960px;
-    margin: 0 auto;
+    @include margin-auto();
+    max-width: $layout-post-width;
     @include padding(1, 0.75, 0);
   }
 

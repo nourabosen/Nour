@@ -23,13 +23,22 @@ const Hero = () => {
     };
   }, []);
 
+  const handleClick = () => {
+    const feedElement = document.getElementById("feed");
+    if (feedElement) {
+      feedElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={`${styles.hero} ${isFaded ? styles.faded : ""}`}>
       <h1 className={styles.title}>NOur Abosen</h1>
       <p className={styles.tagline}>
         A devoted dreamer, unwavering in her pursuit of illusions.
       </p>
-      <Button to="/">Explore Articles</Button>
+      <button onClick={handleClick} className={styles.button}>
+        Explore Articles
+      </button>
     </div>
   );
 };
