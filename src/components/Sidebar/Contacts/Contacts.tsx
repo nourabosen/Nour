@@ -42,6 +42,16 @@ const Contacts: React.FC = () => {
           </li>
         ) : null,
       )}
+      <li className={styles.item} key="leetcode">
+        <a
+          className={styles.link}
+          href="https://leetcode.com/u/NourAbosen/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="leetcode" icon={getIcon("leetcode")} />
+        </a>
+      </li>
     </ul>
   </div>
 )};
