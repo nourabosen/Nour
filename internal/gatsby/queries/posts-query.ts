@@ -19,11 +19,25 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
         edges {
           node {
             frontmatter {
+<<<<<<< HEAD
               template
               slug
             }
             fields {
               slug
+=======
+              date
+              description
+              category
+              title
+              slug
+              template
+              thumbnail
+            }
+            fields {
+              slug
+              categorySlug
+>>>>>>> main
             }
           }
         }

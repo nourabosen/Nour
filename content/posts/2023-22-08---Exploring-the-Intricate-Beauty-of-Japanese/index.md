@@ -9,7 +9,11 @@ tags:
   - "Languages"
   - "Learning"
 description: "A Journey into the Realm of Linguistic Logic and Creative Expression"
+<<<<<<< HEAD
 socialImage: "./media/enjoying.jpg"
+=======
+thumbnail: "./media/enjoying.jpg"
+>>>>>>> main
 ---
 ![The joy of learning](/media/enjoying.jpg)
 
