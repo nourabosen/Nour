@@ -14,18 +14,15 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
   <div className={styles.feed}>
     {edges.map((edge) => (
       <div className={styles.item} key={edge.node.fields.slug}>
-<<<<<<< HEAD
-=======
         {edge.node.frontmatter.thumbnail && (
           <Link to={edge.node.frontmatter?.slug || edge.node.fields.slug}>
             <img
-              src={edge.node.frontmatter.thumbnail}
+              src={edge.node.frontmatter.thumbnail.publicURL}
               className={styles.thumbnail}
               alt={edge.node.frontmatter.title}
             />
           </Link>
         )}
->>>>>>> main
         <div className={styles.meta}>
           <time
             className={styles.time}

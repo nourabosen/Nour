@@ -8,11 +8,7 @@
   tags:
     - "Man United"
   description: "Reliving that unforgettable Man United comeback against Lyon! My personal take on that thrilling drama and the belief it's ignited in the team."
-<<<<<<< HEAD
-  socialImage: "./media/Bruno_1745098291580_0.png"
-=======
   thumbnail: "./media/Bruno_1745098291580_0.png"
->>>>>>> main
 ---
 ![Bruno Fernandes](/media/Bruno_1745098291580_0.png)
 

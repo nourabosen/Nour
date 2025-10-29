@@ -11,11 +11,7 @@
   - "Medical Ethics"
   - "Resource Allocation"
   description: "Dive into the ethical quandary of holding individuals accountable for mistreating their bodies in this insightful blog post. Explore patient equality, organ allocation, and the intricate interplay between health ethics and medical morality. Join the discussion on the ethical decisions shaping healthcare and the responsible use of limited resources."
-<<<<<<< HEAD
-  socialImage: "./media/_29edf815-2b60-4942-9a14-78de0dcf89f7_1707153128765_0.jpg"
-=======
   thumbnail: "./media/_29edf815-2b60-4942-9a14-78de0dcf89f7_1707153128765_0.jpg"
->>>>>>> main
 ---
 ![A quiet hospital hallway, lit by soft morning light](/media/_29edf815-2b60-4942-9a14-78de0dcf89f7_1707153128765_0.jpg)
 
@@ -172,8 +168,4 @@ And open hearts.
 
 Thank you for sitting here with me in it.
 
-<<<<<<< HEAD
-🫶  
-=======
 🫶
->>>>>>> main

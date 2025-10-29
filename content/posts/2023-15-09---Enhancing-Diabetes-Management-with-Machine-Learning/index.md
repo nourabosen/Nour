@@ -12,11 +12,7 @@ tags:
   - Elastic Net Regression"
   - Support Vector Regression"
 description: "This article provides insights into the project's data collection, preprocessing, feature selection, and the performance of various machine learning algorithms. Explore the results and find out which model and training approach emerged as the most effective, potentially offering improved diabetes management tools."
-<<<<<<< HEAD
-socialImage: "./media/Diabetes.jpg"
-=======
 thumbnail: "./media/Diabetes.jpg"
->>>>>>> main
 ---
 ![Tracking Diabetes](/media/Diabetes.jpg)
 

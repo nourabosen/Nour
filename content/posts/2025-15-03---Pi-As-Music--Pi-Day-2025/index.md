@@ -9,11 +9,7 @@
     - "Mathematics"
     - "Pi"
   description: "A Sonic Pi composition that transforms the digits of pi into melody, rhythm, and harmony, creating a dynamic soundscape"
-<<<<<<< HEAD
-  socialImage: "./media/Designer_1741991578636_0.jpeg"
-=======
   thumbnail: "./media/Designer_1741991578636_0.jpeg"
->>>>>>> main
 ---
 ![Pi as Music Visual](/media/Designer_1741991578636_0.jpeg)
 

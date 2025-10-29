@@ -11,11 +11,7 @@ tags:
   - "Beauty"
   - "Python"
 description: "Discovering the beauty of mathematics and artistic expression in my attempt to create Pi's Visual Symphony"
-<<<<<<< HEAD
-socialImage: "./media/PiVisualSymphony.png"
-=======
 thumbnail: "./media/PiVisualSymphony.png"
->>>>>>> main
 ---
 Hello, fellow seekers of beauty in the unexpected!
 
