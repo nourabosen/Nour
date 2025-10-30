@@ -2,14 +2,12 @@ import React from "react";
 
 import { Button } from "@/components/Button";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
-import { TableOfContents } from "@/components/TableOfContents";
+import { TableOfContents, MobileToc } from "@/components/TableOfContents";
 import type { Node } from "@/types";
 
 import { Author } from "./Author";
 import { Comments } from "./Comments";
 import { Content } from "./Content";
-import { Meta } from "./Meta";
-import { Tags } from "./Tags";
 
 import * as styles from "./Post.module.scss";
 
@@ -24,21 +22,17 @@ const Post: React.FC<Props> = ({ post }: Props) => {
 
   return (
     <div className={styles.post}>
-      <div className={styles.buttons}>
-        <Button className={styles.buttonArticles} to="/">
-          All Articles
-        </Button>
-        <ThemeSwitcher />
-      </div>
+      <MobileToc html={html} />
       <div className={styles.content}>
-        <Content body={html} title={title} />
+        <Content
+          body={html}
+          title={title}
+          date={date}
+          tags={tags || []}
+          tagSlugs={tagSlugs || []}
+        />
       </div>
       <TableOfContents html={html} />
-      <div className={styles.footer}>
-        <Meta date={date} />
-        {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-      </div>
-
       <div className={styles.comments}>
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />
       </div>
