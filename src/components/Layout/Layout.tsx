@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import { useTheme } from "@/hooks";
 import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 import * as styles from "./Layout.module.scss";
 
@@ -18,7 +19,8 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
 
   return (
     <div className={styles.layout}>
-      {children}
+      <Header />
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   );

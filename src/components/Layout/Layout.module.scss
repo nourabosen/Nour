@@ -4,10 +4,13 @@
 .layout {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 1rem;
+  min-height: 100vh;
+}
 
-  @include breakpoint-sm {
-    padding: 0 2rem;
-  }
+.main {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
