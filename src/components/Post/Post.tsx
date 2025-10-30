@@ -30,6 +30,8 @@ const Post: React.FC<Props> = ({ post }: Props) => {
           date={date}
           tags={tags || []}
           tagSlugs={tagSlugs || []}
+          postTitle={title}
+          postSlug={slug}
         />
       </div>
       <TableOfContents html={html} />

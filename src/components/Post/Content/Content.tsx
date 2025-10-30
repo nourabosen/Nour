@@ -9,12 +9,28 @@ interface Props {
   date: string;
   tags: string[];
   tagSlugs: string[];
+  postTitle: string;
+  postSlug: string;
 }
 
-const Content: React.FC<Props> = ({ body, title, date, tags, tagSlugs }: Props) => (
+const Content: React.FC<Props> = ({
+  body,
+  title,
+  date,
+  tags,
+  tagSlugs,
+  postTitle,
+  postSlug,
+}: Props) => (
   <div className={styles.content}>
     <h1 className={styles.title}>{title}</h1>
-    <Meta date={date} tags={tags} tagSlugs={tagSlugs} />
+    <Meta
+      date={date}
+      tags={tags}
+      tagSlugs={tagSlugs}
+      postTitle={postTitle}
+      postSlug={postSlug}
+    />
     <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
   </div>
 );
