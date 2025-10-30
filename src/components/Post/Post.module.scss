@@ -20,6 +20,13 @@
   }
 
   .buttons {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .buttonArticles {
+    margin-right: 1rem;
   }
 }

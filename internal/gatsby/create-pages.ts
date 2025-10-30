@@ -135,14 +135,33 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
   const template = constants.templates.indexTemplate;
   const posts = await queries.postsQuery(graphql);
   const total = Math.ceil((posts?.edges?.length ?? 0) / postsLimit);
+  const { data } = await graphql<{
+    localSearch: { publicIndexURL: string };
+  }>(`
+    query {
+      localSearch {
+        publicIndexURL
+      }
+    }
+  `);
 
   for (let page = 0; page < total; page += 1) {
-    createWithPagination({
-      limit: postsLimit,
-      template,
-      total,
-      page,
-      path,
+    createPage({
+      component: template,
+      path: page === 0 ? path : getPaginationPath(path, page),
+      context: {
+        limit: postsLimit,
+        offset: page * postsLimit,
+        pagination: {
+          currentPage: page,
+          prevPagePath:
+            page <= 1 ? path : getPaginationPath(path, utils.decrement(page)),
+          nextPagePath: getPaginationPath(path, utils.increment(page)),
+          hasNextPage: page !== utils.decrement(total),
+          hasPrevPage: page !== 0,
+        },
+        lunrIndex: data?.localSearch.publicIndexURL,
+      },
     });
   }
 };
