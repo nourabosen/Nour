@@ -31,29 +31,38 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
         edges {
           node {
             id
+            fields {
+              slug
+              categorySlug
+            }
+            frontmatter {
+              title
+              date
+              category
+              description
+              slug
+              thumbnail {
+                publicURL
+              }
+            }
           }
         }
       }
     }
   `);
 
-  const allNodes = allMarkdownRemark.edges.map(
-    (edge: { node: { id: string } }) => edge.node
-  );
+  const allEdges = allMarkdownRemark.edges;
 
   useEffect(() => {
-    let result: Edge[] = edges;
+    let result: Edge[] = allEdges;
 
     if (searchQuery && lunrIndex) {
       const index = Index.load(lunrIndex);
       const searchResults = index.search(searchQuery);
       const searchIds = searchResults.map((result) => result.ref);
-      result = allNodes
-        .filter((node: { id: string }) => searchIds.includes(node.id))
-        .map((node: { id: string }) =>
-          edges.find((edge) => edge.node.id === node.id)
-        )
-        .filter(Boolean) as Array<Edge>;
+      result = allEdges.filter((edge: Edge) =>
+        searchIds.includes(edge.node.id)
+      );
     }
 
     if (selectedCategory) {
@@ -63,23 +72,22 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
     }
 
     setFilteredEdges(result);
-  }, [searchQuery, selectedCategory, edges, lunrIndex, allNodes]);
+  }, [searchQuery, selectedCategory, allEdges, lunrIndex]);
 
   return (
     <div>
       {currentPage === 0 && <Hero />}
       <Page>
-        <Filter
-          onSearch={setSearchQuery}
-          onFilter={setSelectedCategory}
-        />
+        <Filter onSearch={setSearchQuery} onFilter={setSelectedCategory} />
         <Feed edges={filteredEdges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
+        {!searchQuery && !selectedCategory && (
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        )}
       </Page>
     </div>
   );
