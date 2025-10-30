@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Feed } from "@/components/Feed";
 import { Page } from "@/components/Page";
 import { Pagination } from "@/components/Pagination";
+import { Filter } from "@/components/Filter";
 import { Edge, PageContext } from "@/types";
 import Hero from "../Hero/Hero";
-
-import * as styles from "./Home.module.scss";
 
 interface Props {
   edges: Array<Edge>;
@@ -18,11 +17,39 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
   const { hasNextPage, hasPrevPage, prevPagePath, nextPagePath, currentPage } =
     pagination;
 
+  const [filteredEdges, setFilteredEdges] = useState(edges);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  useEffect(() => {
+    let result = edges;
+
+    if (searchQuery) {
+      result = result.filter((edge) =>
+        edge.node.frontmatter.title
+          .toLowerCase()
+          .includes(searchQuery.toLowerCase())
+      );
+    }
+
+    if (selectedCategory) {
+      result = result.filter(
+        (edge) => edge.node.frontmatter.category === selectedCategory
+      );
+    }
+
+    setFilteredEdges(result);
+  }, [searchQuery, selectedCategory, edges]);
+
   return (
     <div>
       {currentPage === 0 && <Hero />}
       <Page>
-        <Feed edges={edges} />
+        <Filter
+          onSearch={setSearchQuery}
+          onFilter={setSelectedCategory}
+        />
+        <Feed edges={filteredEdges} />
         <Pagination
           prevPagePath={prevPagePath}
           nextPagePath={nextPagePath}
