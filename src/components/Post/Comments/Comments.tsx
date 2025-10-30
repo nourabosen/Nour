@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { DiscussionEmbed } from "disqus-react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 
 import { useSiteMetadata } from "@/hooks";
+
+const DiscussionEmbed = lazy(() =>
+  import("disqus-react").then((mod) => ({ default: mod.DiscussionEmbed }))
+);
 
 interface Props {
   postTitle: string;
@@ -23,14 +26,16 @@ const Comments: React.FC<Props> = ({ postTitle, postSlug }: Props) => {
   return (
     <>
       {isClient && (
-        <DiscussionEmbed
-          shortname={disqusShortname}
-          config={{
-            url: url + postSlug,
-            identifier: postTitle,
-            title: postTitle,
-          }}
-        />
+        <Suspense fallback={<div>Loading comments...</div>}>
+          <DiscussionEmbed
+            shortname={disqusShortname}
+            config={{
+              url: url + postSlug,
+              identifier: postTitle,
+              title: postTitle,
+            }}
+          />
+        </Suspense>
       )}
     </>
   );
