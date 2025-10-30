@@ -53,14 +53,18 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
                 })}
               </time>
               <span className={styles.divider} />
-              <span className={styles.category}>
-                <Link
-                  to={categorySlug}
-                  className={`${styles.link} ${styles[category.toLowerCase()]}`}
-                >
-                  {category}
-                </Link>
-              </span>
+              {category && (
+                <span className={styles.category}>
+                  <Link
+                    to={categorySlug}
+                    className={`${styles.link} ${
+                      styles[category.toLowerCase()]
+                    }`}
+                  >
+                    {category}
+                  </Link>
+                </span>
+              )}
             </div>
             <h2 className={styles.title}>
               <Link className={styles.link} to={slug}>
