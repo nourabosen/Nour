@@ -2,7 +2,7 @@ import React from "react";
 
 import { MobileToc } from "@/components/TableOfContents";
 
-import { Meta } from "../Meta/Meta";
+import { Meta } from "@/components/Post/Meta";
 import * as styles from "./Content.module.scss";
 
 interface Props {

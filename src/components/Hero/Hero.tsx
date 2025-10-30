@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}>NOur's Blog</h1>
+        <h1 className={styles.title}>Nour's Blog</h1>
         <p className={styles.tagline}>
-          Personal Blog, Portfolio & Digital Garden
+          A mathematician's journey through code, creativity, and chaos.
         </p>
         <div className={styles.buttons}>
           <Link to="/pages/about" className={styles.button}>

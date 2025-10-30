@@ -27,60 +27,55 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
       const slug = frontmatterSlug || fieldsSlug;
 
       return (
-        <article key={slug} className={styles.item}>
-          {thumbnail && (
-            <Link to={slug} className={styles.thumbnailLink}>
-              <img
-                src={thumbnail.publicURL}
-                className={styles.thumbnail}
-                alt={title}
-              />
-            </Link>
-          )}
-          <div className={styles.content}>
-            <div className={styles.meta}>
-              <time
-                className={styles.time}
-                dateTime={new Date(date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              >
-                {new Date(date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                })}
-              </time>
-              <span className={styles.divider} />
-              {category && (
-                <span className={styles.category}>
-                  <Link
-                    to={categorySlug}
-                    className={`${styles.link} ${
-                      styles[category.toLowerCase()]
-                    }`}
-                  >
-                    {category}
-                  </Link>
-                </span>
-              )}
-            </div>
-            <h2 className={styles.title}>
-              <Link className={styles.link} to={slug}>
-                {title}
-              </Link>
-            </h2>
-            {description && (
-              <p className={styles.description}>{description}</p>
+        <Link to={slug} key={slug} className={styles.link}>
+          <article className={styles.item}>
+            {thumbnail && (
+              <div className={styles.thumbnailContainer}>
+                <img
+                  src={thumbnail.publicURL}
+                  className={styles.thumbnail}
+                  alt={title}
+                />
+              </div>
             )}
-            <div className={styles.footer}>
-              <Link className={styles.more} to={slug}>
-                Read
-              </Link>
+            <div className={styles.content}>
+              <div className={styles.meta}>
+                <time
+                  className={styles.time}
+                  dateTime={new Date(date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                >
+                  {new Date(date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                  })}
+                </time>
+                <span className={styles.divider} />
+                {category && (
+                  <span className={styles.category}>
+                    <span
+                      className={`${styles.categoryLink} ${
+                        styles[category.toLowerCase()]
+                      }`}
+                    >
+                      {category}
+                    </span>
+                  </span>
+                )}
+              </div>
+              <h2 className={styles.title}>{title}</h2>
+              {description && (
+                <p className={styles.description}>{description}</p>
+              )}
+              <div className={styles.footer}>
+                <span className={styles.more}>Read</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </Link>
       );
     })}
   </div>
