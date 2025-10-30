@@ -2,8 +2,8 @@
 @import "../../assets/scss/mixins";
 
 .hero {
-  background-color: var(--color-background-secondary);
-  padding: 4rem 2rem;
+  background-color: var(--color-background);
+  padding: 6rem 2rem;
   text-align: center;
 
   .container {
@@ -12,16 +12,16 @@
   }
 
   .title {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 3.5rem;
+    font-weight: 700;
     color: var(--color-text);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .tagline {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--color-text-light);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .buttons {
