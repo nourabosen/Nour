@@ -1,8 +1,8 @@
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
-import * as styles from "./Meta.module.scss";
 
-const CommentCount = lazy(() => import("../Comments/CommentCount"));
+import CommentCount from "../Comments/CommentCount";
+import * as styles from "./Meta.module.scss";
 
 interface Props {
   date: string;
@@ -35,11 +35,7 @@ export const Meta: React.FC<Props> = ({
           day: "numeric",
         })}
       </p>
-      {isClient && (
-        <Suspense fallback={<span>...</span>}>
-          <CommentCount postTitle={postTitle} postSlug={postSlug} />
-        </Suspense>
-      )}
+      {isClient && <CommentCount postTitle={postTitle} postSlug={postSlug} />}
       {tags && tagSlugs && (
         <div className={styles.tags}>
         {tagSlugs.map((slug, i) => (
