@@ -19,7 +19,7 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
     pagination;
 
   return (
-    <div className={styles.home}>
+    <div>
       {currentPage === 0 && <Hero />}
       <Page>
         <Feed edges={edges} />
