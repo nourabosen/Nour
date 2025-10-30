@@ -12,7 +12,11 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
+
+  @include breakpoint-sm {
+    padding: 1.5rem;
+  }
 
   @include breakpoint-md {
     padding: 2rem;
