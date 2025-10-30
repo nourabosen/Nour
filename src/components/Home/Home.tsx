@@ -61,7 +61,7 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
         const response = await fetch(lunrIndex);
         const indexJson = await response.json();
         const index = Index.load(indexJson);
-        const searchResults = index.search(searchQuery);
+        const searchResults = index.search(`*${searchQuery}*`);
         const searchIds = searchResults.map((result) => result.ref);
         result = allEdges.filter((edge: Edge) =>
           searchIds.includes(edge.node.id)

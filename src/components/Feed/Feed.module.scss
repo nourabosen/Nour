@@ -33,7 +33,7 @@
   overflow: hidden;
 
   @include breakpoint-md {
-    width: 320px;
+    width: 40%;
     height: auto;
     flex-shrink: 0;
   }
@@ -58,6 +58,7 @@
 
   @include breakpoint-md {
     padding: 2rem;
+    width: 60%;
   }
 }
 
