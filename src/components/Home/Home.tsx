@@ -16,8 +16,21 @@ interface Props {
   };
 }
 
+declare global {
+  interface Window {
+    __LUNR__: {
+      [key: string]: {
+        index: Index;
+        store: {
+          [key: string]: any;
+        };
+      };
+    };
+  }
+}
+
 const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
-  const { pagination, lunrIndex } = pageContext;
+  const { pagination } = pageContext;
   const { hasNextPage, hasPrevPage, prevPagePath, nextPagePath, currentPage } =
     pagination;
 
@@ -27,7 +40,9 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { template: { eq: "post" } } }
+      ) {
         edges {
           node {
             id
@@ -54,31 +69,24 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
   const allEdges = allMarkdownRemark.edges;
 
   useEffect(() => {
-    const fetchIndexAndSearch = async () => {
+    if (searchQuery && window.__LUNR__) {
+      const lunrIndex = window.__LUNR__["en"];
+      const searchResults = lunrIndex.index.search(`*${searchQuery}*`);
+      const searchIds = searchResults.map((result) => result.ref);
+      const result = allEdges.filter((edge: Edge) =>
+        searchIds.includes(edge.node.id)
+      );
+      setFilteredEdges(result);
+    } else {
       let result: Edge[] = allEdges;
-
-      if (searchQuery && lunrIndex) {
-        const response = await fetch(lunrIndex);
-        const indexJson = await response.json();
-        const index = Index.load(indexJson);
-        const searchResults = index.search(`*${searchQuery}*`);
-        const searchIds = searchResults.map((result) => result.ref);
-        result = allEdges.filter((edge: Edge) =>
-          searchIds.includes(edge.node.id)
-        );
-      }
-
       if (selectedCategory) {
         result = result.filter(
           (edge) => edge.node.frontmatter.category === selectedCategory
         );
       }
-
       setFilteredEdges(result);
-    };
-
-    fetchIndexAndSearch();
-  }, [searchQuery, selectedCategory, allEdges, lunrIndex]);
+    }
+  }, [searchQuery, selectedCategory, allEdges]);
 
   return (
     <div>

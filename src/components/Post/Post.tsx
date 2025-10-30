@@ -23,18 +23,20 @@ const Post: React.FC<Props> = ({ post }: Props) => {
   return (
     <div className={styles.post}>
       <MobileToc html={html} />
-      <div className={styles.content}>
-        <Content
-          body={html}
-          title={title}
-          date={date}
-          tags={tags || []}
-          tagSlugs={tagSlugs || []}
-          postTitle={title}
-          postSlug={slug}
-        />
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <Content
+            body={html}
+            title={title}
+            date={date}
+            tags={tags || []}
+            tagSlugs={tagSlugs || []}
+            postTitle={title}
+            postSlug={slug}
+          />
+        </div>
+        <TableOfContents html={html} />
       </div>
-      <TableOfContents html={html} />
       <div className={styles.comments}>
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Meta } from "../Meta";
+import { Meta } from "../Meta/Meta";
 import * as styles from "./Content.module.scss";
 
 interface Props {

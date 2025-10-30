@@ -1,5 +1,5 @@
 {
-  "title": "NOur's Blog",
+  "title": "Nour's Blog",
   "url": "https://nourabosen.netlify.app/",
   "subtitle": "A dedicated mathematician in the making.",
   "copyright": "© All rights reserved.",
@@ -9,24 +9,20 @@
   "pathPrefix": "/",
   "menu": [
     {
-      "label": "Articles",
+      "label": "Home",
       "path": "/"
     },
     {
-      "label": "Projects",
-      "path": "/pages/projects"
+      "label": "Research Papers",
+      "path": "/pages/papers"
     },
     {
       "label": "About me",
       "path": "/pages/about"
     },
     {
-      "label": "Digital Garden",
-      "path": "https://nourdigitalgarden.netlify.app/#/page/digital%20garden"
-    },
-    {
-      "label": "Research Papers",
-      "path": "/pages/papers"
+      "label": "Projects",
+      "path": "/pages/projects"
     }
   ],
   "author": {
