@@ -1,7 +1,7 @@
 {
   "title": "Nour's Blog",
   "url": "https://nourabosen.netlify.app/",
-  "subtitle": "A dedicated mathematician in the making.",
+  "subtitle": "Where illusions and mathematics collide.",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "UA-73379983-2",
   "disqusShortname": "",
@@ -23,6 +23,10 @@
     {
       "label": "Projects",
       "path": "/pages/projects"
+    },
+    {
+      "label": "Digital Garden",
+      "path": "https://nourdigitalgarden.netlify.app/#/page/digital%20garden"
     }
   ],
   "author": {

@@ -22,7 +22,6 @@ const Post: React.FC<Props> = ({ post }: Props) => {
 
   return (
     <div className={styles.post}>
-      <MobileToc html={html} />
       <div className={styles.container}>
         <div className={styles.content}>
           <Content
@@ -33,6 +32,7 @@ const Post: React.FC<Props> = ({ post }: Props) => {
             tagSlugs={tagSlugs || []}
             postTitle={title}
             postSlug={slug}
+            html={html}
           />
         </div>
         <TableOfContents html={html} />
