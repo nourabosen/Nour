@@ -54,24 +54,30 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
   const allEdges = allMarkdownRemark.edges;
 
   useEffect(() => {
-    let result: Edge[] = allEdges;
+    const fetchIndexAndSearch = async () => {
+      let result: Edge[] = allEdges;
 
-    if (searchQuery && lunrIndex) {
-      const index = Index.load(lunrIndex);
-      const searchResults = index.search(searchQuery);
-      const searchIds = searchResults.map((result) => result.ref);
-      result = allEdges.filter((edge: Edge) =>
-        searchIds.includes(edge.node.id)
-      );
-    }
+      if (searchQuery && lunrIndex) {
+        const response = await fetch(lunrIndex);
+        const indexJson = await response.json();
+        const index = Index.load(indexJson);
+        const searchResults = index.search(searchQuery);
+        const searchIds = searchResults.map((result) => result.ref);
+        result = allEdges.filter((edge: Edge) =>
+          searchIds.includes(edge.node.id)
+        );
+      }
 
-    if (selectedCategory) {
-      result = result.filter(
-        (edge) => edge.node.frontmatter.category === selectedCategory
-      );
-    }
+      if (selectedCategory) {
+        result = result.filter(
+          (edge) => edge.node.frontmatter.category === selectedCategory
+        );
+      }
 
-    setFilteredEdges(result);
+      setFilteredEdges(result);
+    };
+
+    fetchIndexAndSearch();
   }, [searchQuery, selectedCategory, allEdges, lunrIndex]);
 
   return (
