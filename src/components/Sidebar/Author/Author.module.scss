@@ -32,7 +32,7 @@
   }
 
   .subtitle {
-    color: $color-gray;
+    color: var(--color-text-light);
     @include line-height(1);
     @include margin-bottom(1);
   }

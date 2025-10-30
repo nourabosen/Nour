@@ -6,8 +6,8 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, $color-dark-background, $color-dark-background-secondary);
-  color: $color-dark-text;
+  background: var(--color-background);
+  color: var(--color-text);
   font-family: $typographic-font-family;
   font-size: $typographic-base-font-size;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +25,7 @@ h5,
 h6 {
   font-family: $typographic-header-font-family;
   font-weight: 700;
-  color: $color-accent;
+  color: var(--color-primary);
 }
 
 h1 {
@@ -77,22 +77,22 @@ img {
 }
 
 hr {
-  background-color: $color-light-gray;
+  background-color: var(--color-border);
   border: 0;
   height: 1px;
   margin: 2rem 0;
 }
 
 a {
-  color: $color-accent;
+  color: var(--color-primary);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    color: $color-accent-secondary;
-    text-shadow: 0 0 10px $color-accent;
+    color: var(--color-primary);
+    text-decoration: underline;
   }
 }
 

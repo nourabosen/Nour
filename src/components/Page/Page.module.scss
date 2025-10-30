@@ -29,7 +29,7 @@
       gap: 1.5rem;
 
       .project {
-        background-color: $color-dark-cloud;
+        background-color: var(--color-background-secondary);
         border-radius: 8px;
         padding: 1.5rem;
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;

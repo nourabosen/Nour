@@ -45,7 +45,7 @@
     color: var(--color-white);
 
     &:hover {
-      background-color: darken(var(--color-primary), 10%);
+      filter: brightness(90%);
     }
   }
 
