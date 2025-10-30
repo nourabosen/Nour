@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { Index } from "lunr";
 
 import { Feed } from "@/components/Feed";
 import { Page } from "@/components/Page";
@@ -9,11 +11,13 @@ import Hero from "../Hero/Hero";
 
 interface Props {
   edges: Array<Edge>;
-  pageContext: PageContext;
+  pageContext: PageContext & {
+    lunrIndex: any;
+  };
 }
 
 const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
-  const { pagination } = pageContext;
+  const { pagination, lunrIndex } = pageContext;
   const { hasNextPage, hasPrevPage, prevPagePath, nextPagePath, currentPage } =
     pagination;
 
@@ -21,16 +25,35 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  useEffect(() => {
-    let result = edges;
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+  `);
 
-    if (searchQuery) {
-      result = result.filter((edge) => {
-        const { title } = edge.node.frontmatter;
-        const { html } = edge.node;
-        const searchableContent = `${title} ${html}`;
-        return searchableContent.toLowerCase().includes(searchQuery.toLowerCase());
-      });
+  const allNodes = allMarkdownRemark.edges.map(
+    (edge: { node: { id: string } }) => edge.node
+  );
+
+  useEffect(() => {
+    let result: Edge[] = edges;
+
+    if (searchQuery && lunrIndex) {
+      const index = Index.load(lunrIndex);
+      const searchResults = index.search(searchQuery);
+      const searchIds = searchResults.map((result) => result.ref);
+      result = allNodes
+        .filter((node: { id: string }) => searchIds.includes(node.id))
+        .map((node: { id: string }) =>
+          edges.find((edge) => edge.node.id === node.id)
+        )
+        .filter(Boolean) as Array<Edge>;
     }
 
     if (selectedCategory) {
@@ -40,7 +63,7 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
     }
 
     setFilteredEdges(result);
-  }, [searchQuery, selectedCategory, edges]);
+  }, [searchQuery, selectedCategory, edges, lunrIndex, allNodes]);
 
   return (
     <div>

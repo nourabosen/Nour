@@ -199,5 +199,25 @@ export default {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-optimize-svgs",
     "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-lunr",
+      options: {
+        languages: [{ name: "en" }],
+        fields: [
+          { name: "title", store: true, attributes: { boost: 20 } },
+          { name: "content", store: true },
+          { name: "tags", store: true },
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            title: (node: { frontmatter: { title: string } }) =>
+              node.frontmatter.title,
+            content: (node: { html: string }) => node.html,
+            tags: (node: { frontmatter: { tags: string[] } }) =>
+              node.frontmatter.tags,
+          },
+        },
+      },
+    },
   ],
 };
