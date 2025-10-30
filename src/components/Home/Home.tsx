@@ -25,11 +25,12 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
     let result = edges;
 
     if (searchQuery) {
-      result = result.filter((edge) =>
-        edge.node.frontmatter.title
-          .toLowerCase()
-          .includes(searchQuery.toLowerCase())
-      );
+      result = result.filter((edge) => {
+        const { title } = edge.node.frontmatter;
+        const { html } = edge.node;
+        const searchableContent = `${title} ${html}`;
+        return searchableContent.toLowerCase().includes(searchQuery.toLowerCase());
+      });
     }
 
     if (selectedCategory) {
