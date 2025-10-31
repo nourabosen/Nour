@@ -12,12 +12,6 @@ const Filter: React.FC<Props> = ({ onSearch, onFilter }) => {
 
   return (
     <div className={styles.filter}>
-      <input
-        type="text"
-        placeholder="Search..."
-        onChange={(e) => onSearch(e.target.value)}
-        className={styles.searchInput}
-      />
       <select
         onChange={(e) => onFilter(e.target.value)}
         className={styles.categorySelect}
@@ -29,6 +23,12 @@ const Filter: React.FC<Props> = ({ onSearch, onFilter }) => {
           </option>
         ))}
       </select>
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={(e) => onSearch(e.target.value)}
+        className={styles.searchInput}
+      />
     </div>
   );
 };
