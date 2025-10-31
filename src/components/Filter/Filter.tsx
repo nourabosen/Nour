@@ -1,26 +1,34 @@
 import React from "react";
+import { useCategoriesList } from "@/hooks";
 import * as styles from "./Filter.module.scss";
 
 type Props = {
-  categories: string[];
-  active: string;
-  setActive: (category: string) => void;
+  onSearch: (query: string) => void;
+  onFilter: (category: string) => void;
 };
 
-const Filter: React.FC<Props> = ({ categories, active, setActive }) => {
+const Filter: React.FC<Props> = ({ onSearch, onFilter }) => {
+  const categories = useCategoriesList();
+
   return (
     <div className={styles.filter}>
-      {categories.map((category) => (
-        <button
-          key={category}
-          className={`${styles.button} ${
-            active === category ? styles.active : ""
-          }`}
-          onClick={() => setActive(category)}
-        >
-          {category}
-        </button>
-      ))}
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={(e) => onSearch(e.target.value)}
+        className={styles.searchInput}
+      />
+      <select
+        onChange={(e) => onFilter(e.target.value)}
+        className={styles.categorySelect}
+      >
+        <option value="">All Categories</option>
+        {categories.map((category) => (
+          <option key={category.fieldValue} value={category.fieldValue}>
+            {category.fieldValue}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
