@@ -34,7 +34,7 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const offset = 100;
+      const offset = 120; // Increased offset for better positioning
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
