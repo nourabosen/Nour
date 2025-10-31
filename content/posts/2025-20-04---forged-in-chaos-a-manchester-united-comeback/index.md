@@ -15,6 +15,7 @@ thumbnail: "./media/Bruno_1745098291580_0.png"
 > *“Take me home, United Road.  
 > Take me home, United Road…  
 > To Old Trafford, to see United.”*
+
 You know that chant. You’ve sung it when the crowd was roaring. You’ve whispered it when you were alone in your bedroom at 2 a.m., staring at the ceiling after another crushing loss. And last night? You screamed it — hoarse, tear-streaked, utterly broken — as Harry Maguire’s header crashed into the net and time ran out on Lyon’s dreams.
 That match wasn’t football. It was pure, unfiltered *emotion*.
 ---
