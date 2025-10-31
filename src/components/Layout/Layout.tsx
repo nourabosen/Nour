@@ -18,6 +18,7 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
 
   useEffect(() => {
     document.documentElement.className = mode;
+    window.scrollTo(0, 0);
   }, [mode]);
 
   return (
