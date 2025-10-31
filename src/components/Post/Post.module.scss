@@ -22,8 +22,9 @@
 }
 
 .toc {
+  display: none;
+
   @include breakpoint-lg {
-    position: sticky;
-    top: 80px;
+    display: block;
   }
 }

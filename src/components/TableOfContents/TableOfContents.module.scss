@@ -18,6 +18,8 @@
 
     @include breakpoint-lg {
       display: block;
+      position: sticky;
+      top: 80px;
     }
   }
 }
