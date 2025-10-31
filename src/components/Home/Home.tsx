@@ -91,8 +91,8 @@ const Home: React.FC<Props> = ({ edges, pageContext }: Props) => {
   return (
     <div>
       {currentPage === 0 && <Hero />}
+      <Filter onSearch={setSearchQuery} onFilter={setSelectedCategory} />
       <Page>
-        <Filter onSearch={setSearchQuery} onFilter={setSelectedCategory} />
         <Feed edges={filteredEdges} />
         {!searchQuery && !selectedCategory && (
           <Pagination

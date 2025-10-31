@@ -72,6 +72,14 @@
       word-break: break-all;
     }
   }
+
+  .toc {
+    display: block;
+
+    @include breakpoint-lg {
+      display: none;
+    }
+  }
 }
 
 @include breakpoint-md {

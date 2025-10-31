@@ -24,7 +24,7 @@ const Content: React.FC<Props> = ({
     <div className={styles.content}>
       <h1 className={styles.title}>{title}</h1>
       <Meta date={date} tags={tags} tagSlugs={tagSlugs} />
-      {tableOfContents}
+      <div className={styles.toc}>{tableOfContents}</div>
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </div>
   );
