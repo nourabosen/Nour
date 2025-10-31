@@ -30,6 +30,15 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
     setHeadings(newHeadings);
   }, [html]);
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`${styles.toc} ${isOpen ? styles.isOpen : ""}`}>
       <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
@@ -44,7 +53,7 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
             <a
               href={`#${heading.id}`}
               className={styles.link}
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => handleLinkClick(e, heading.id)}
             >
               {heading.text}
             </a>
