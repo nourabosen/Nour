@@ -6,21 +6,18 @@ interface Theme {
 }
 
 const useTheme = (): readonly [Theme, () => void] => {
-  const [theme, setTheme] = useState<Theme>({
-    mode: getDefaultColorMode(),
-  });
+  const [theme, setTheme] = useState<Theme>({ mode: "light" });
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      setTheme({ mode: storedTheme as "dark" | "light" });
-    }
+    setTheme({ mode: getDefaultColorMode() });
   }, []);
 
   const toggle = () => {
-    const newMode = theme.mode === "dark" ? "light" : "dark";
-    setTheme({ mode: newMode });
-    localStorage.setItem("theme", newMode);
+    setTheme(({ mode }) => {
+      const newMode = mode === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode);
+      return { mode: newMode };
+    });
   };
 
   return [theme, toggle];
