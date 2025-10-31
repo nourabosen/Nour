@@ -13,6 +13,7 @@ interface Props {
 
 export const TableOfContents: React.FC<Props> = ({ html }) => {
   const [headings, setHeadings] = useState<Heading[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const parser = new DOMParser();
@@ -30,15 +31,21 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
   }, [html]);
 
   return (
-    <nav className={styles.toc}>
-      <h3 className={styles.title}>On this page</h3>
+    <nav className={`${styles.toc} ${isOpen ? styles.isOpen : ""}`}>
+      <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
+        <h3 className={styles.title}>On this page</h3>
+      </button>
       <ul className={styles.list}>
         {headings.map((heading) => (
           <li
             key={heading.id}
             className={`${styles.item} ${styles[`level${heading.level}`]}`}
           >
-            <a href={`#${heading.id}`} className={styles.link}>
+            <a
+              href={`#${heading.id}`}
+              className={styles.link}
+              onClick={() => setIsOpen(false)}
+            >
               {heading.text}
             </a>
           </li>
