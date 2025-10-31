@@ -53,7 +53,7 @@ export const TableOfContents: React.FC<Props> = ({ html, isMobile }) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const offset = 100; // Increased offset for better positioning
+      const offset = 80; // Header height
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -95,6 +95,7 @@ export const TableOfContents: React.FC<Props> = ({ html, isMobile }) => {
 
   return (
     <nav className={styles.toc}>
+      <h3 className={styles.title}>On this page</h3>
       <ul className={styles.list}>
         {headings.map((heading) => (
           <li
