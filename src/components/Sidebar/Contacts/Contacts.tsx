@@ -6,6 +6,9 @@ import { Icon } from "@/components/Icon";
 import { ICONS } from "@/constants";
 import { useSiteMetadata } from "@/hooks";
 import { getContactHref, getIcon } from "@/utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faLetterboxd } from "@fortawesome/free-brands-svg-icons";
 
 import * as styles from "./Contacts.module.scss";
 
@@ -49,7 +52,7 @@ const Contacts: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon name="leetcode" icon={getIcon("leetcode")} />
+          <FontAwesomeIcon icon={faCode} />
         </a>
       </li>
       <li className={styles.item} key="letterboxd">
@@ -59,7 +62,7 @@ const Contacts: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon name="letterboxd" icon={getIcon("letterboxd")} />
+          <FontAwesomeIcon icon={faLetterboxd} />
         </a>
       </li>
     </ul>
