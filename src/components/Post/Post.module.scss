@@ -6,8 +6,8 @@
 
   .container {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
+    gap: 2rem;
 
     @include-md-and-down {
       flex-direction: column;
@@ -16,7 +16,7 @@
 
   .content {
     max-width: $layout-post-width;
-    margin-bottom: 2rem;
+    width: 100%;
   }
 
   .footer {
