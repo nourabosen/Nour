@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { Image } from "@/components/Image";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
-import { useSiteMetadata } from "@/hooks";
+import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
+import useSiteMetadata from "../../../hooks/use-site-metadata";
 
 import * as styles from "./Author.module.scss";
 

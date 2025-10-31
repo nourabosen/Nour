@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { MobileToc } from "@/components/TableOfContents";
 
@@ -11,8 +11,6 @@ interface Props {
   date: string;
   tags: string[];
   tagSlugs: string[];
-  postTitle: string;
-  postSlug: string;
   html: string;
 }
 
@@ -22,22 +20,22 @@ const Content: React.FC<Props> = ({
   date,
   tags,
   tagSlugs,
-  postTitle,
-  postSlug,
   html,
-}: Props) => (
-  <div className={styles.content}>
-    <h1 className={styles.title}>{title}</h1>
-    <Meta
-      date={date}
-      tags={tags}
-      tagSlugs={tagSlugs}
-      postTitle={postTitle}
-      postSlug={postSlug}
-    />
-    <MobileToc html={html} />
-    <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
-  </div>
-);
+}: Props) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return (
+    <div className={styles.content}>
+      <h1 className={styles.title}>{title}</h1>
+      <Meta date={date} tags={tags} tagSlugs={tagSlugs} />
+      {isClient && <MobileToc html={html} />}
+      <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
+    </div>
+  );
+};
 
 export default Content;

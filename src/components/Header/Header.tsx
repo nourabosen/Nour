@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { useSiteMetadata } from "@/hooks";
-import { Hamburger } from "@/components/Hamburger";
+import useSiteMetadata from "../../hooks/use-site-metadata";
+import Hamburger from "@/components/Hamburger/Hamburger";
 import * as styles from "./Header.module.scss";
 
 interface MenuItem {
@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          NOur's Blog
+          Nour's Blog
         </Link>
         <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ""}`}>
           <ul className={styles.navList}>
