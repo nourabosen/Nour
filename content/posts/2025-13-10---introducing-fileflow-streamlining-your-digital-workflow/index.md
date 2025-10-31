@@ -59,7 +59,7 @@ FileFlow also includes a number of other features to improve your workflow:
 
 Ready to take control of your digital life? Installing FileFlow is as simple as adding it to your Ulauncher extensions.
 
-### Where to Get It
+#### Where to Get It
 
 You can download Ulauncher from [its official website](https://ulauncher.io/). Once you have Ulauncher installed, you can add the FileFlow extension from its official page on the Ulauncher extensions website or directly from the GitHub repository.
 
