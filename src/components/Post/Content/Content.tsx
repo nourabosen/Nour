@@ -9,7 +9,6 @@ interface Props {
   date: string;
   tags: string[];
   tagSlugs: string[];
-  tableOfContents: React.ReactNode;
 }
 
 const Content: React.FC<Props> = ({
@@ -18,12 +17,10 @@ const Content: React.FC<Props> = ({
   date,
   tags,
   tagSlugs,
-  tableOfContents,
 }: Props) => {
   return (
     <div className={styles.content}>
       <h1 className={styles.title}>{title}</h1>
-      {tableOfContents}
       <Meta date={date} tags={tags} tagSlugs={tagSlugs} />
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </div>
