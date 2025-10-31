@@ -11,6 +11,7 @@
   description: "A Sonic Pi composition that transforms the digits of pi into melody, rhythm, and harmony, creating a dynamic soundscape"
   thumbnail: "./media/Designer_1741991578636_0.jpeg"
 ---
+<div class="pi-post">
 ![Pi as Music Visual](/media/Designer_1741991578636_0.jpeg)
 
 There’s a quiet magic in the way mathematics whispers through the world, sometimes in spirals, sometimes in stars… and sometimes, in sound.
