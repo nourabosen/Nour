@@ -10,6 +10,8 @@
 .main {
   flex-grow: 1;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem;
 
   @include breakpoint-sm {
@@ -19,9 +21,4 @@
   @include breakpoint-md {
     padding: 2rem;
   }
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
 }

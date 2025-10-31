@@ -3,50 +3,27 @@
 
 .post {
   padding: 2rem 0;
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: flex-start;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 
-    @include-md-and-down {
-      flex-direction: column;
-    }
+  @include breakpoint-lg {
+    grid-template-columns: 1fr 250px;
   }
+}
 
-  .content {
-    max-width: $layout-post-width;
-    width: 100%;
-    margin: 0 auto;
-  }
+.content {
+  max-width: $layout-post-width;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .toc {
-    width: 250px;
+.toc {
+  @include breakpoint-lg {
     position: sticky;
     top: 80px;
-
-    @include-md-and-down {
-      display: none;
-    }
-  }
-
-  .footer {
-    margin-bottom: 2rem;
-  }
-
-  .comments {
-    margin-bottom: 2rem;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-
-  .buttonArticles {
-    margin-right: 1rem;
   }
 }
