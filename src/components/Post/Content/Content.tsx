@@ -23,8 +23,8 @@ const Content: React.FC<Props> = ({
   return (
     <div className={styles.content}>
       <h1 className={styles.title}>{title}</h1>
-      {tableOfContents}
       <Meta date={date} tags={tags} tagSlugs={tagSlugs} />
+      {tableOfContents}
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </div>
   );
