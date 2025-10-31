@@ -34,7 +34,7 @@ const Contacts: React.FC = () => {
                 className={styles.link}
                 href={getContactHref(name, contacts[name])}
                 target="_blank"
-                rel={`noopener noreferrer${name === "mastodon" ? " me" : ""}`}
+                rel="noopener noreferrer"
               >
                 <Icon name={name} icon={getIcon(name)} />
               </a>
@@ -50,6 +50,16 @@ const Contacts: React.FC = () => {
           rel="noopener noreferrer"
         >
           <Icon name="leetcode" icon={getIcon("leetcode")} />
+        </a>
+      </li>
+      <li className={styles.item} key="letterboxd">
+        <a
+          className={styles.link}
+          href="https://letterboxd.com/NourAbosen/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="letterboxd" icon={getIcon("letterboxd")} />
         </a>
       </li>
     </ul>
