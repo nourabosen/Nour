@@ -115,4 +115,4 @@ In a world dominated by cloud services, the decision to keep InsightMiner fully 
 -   **Offline Access**: Your knowledge base is always available.
 -   **Customization**: You have the freedom to swap out the underlying AI models to fit your specific needs.
 
-If you're ready to take control of your digital notes and build a truly personal knowledge engine, give InsightMiner a try. It’s a step towards working smarter, not harder, and unlocking the collective wisdom hidden in your own reading.
+If you're ready to take control of your digital notes and build a truly personal knowledge engine, give [InsightMiner](https://github.com/nourabosen/InsightMiner) a try. It’s a step towards working smarter, not harder, and unlocking the collective wisdom hidden in your own reading.
