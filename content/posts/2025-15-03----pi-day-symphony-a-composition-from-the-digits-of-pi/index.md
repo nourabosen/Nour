@@ -13,13 +13,13 @@
 ---
 ![Pi as Music Visual](/media/Designer_1741991578636_0.jpeg)
 
-There’s a quiet magic in the way mathematics whispers through the world—sometimes in spirals, sometimes in stars… and sometimes, in sound.
+There’s a quiet magic in the way mathematics whispers through the world, sometimes in spirals, sometimes in stars… and sometimes, in sound.
 
 This Pi Day, I didn’t bake a pie.
 
 I composed one.
 
-Using nothing but the first 1,000 digits of π — that endless, irrational, beautifully unpredictable number — I turned math into melody. The result? A living, breathing piece of music, born from code, shaped by numbers, and meant to be *felt*.
+Using nothing but the first 1,000 digits of π ,  that endless, irrational, beautifully unpredictable number ,  I turned math into melody. The result? A living, breathing piece of music, born from code, shaped by numbers, and meant to be *felt*.
 
 You can listen here:  
 🎧 [Listen to “Pi as Music” on X (Twitter)](https://x.com/NourAbosen/status/1900670730791952420)
@@ -39,18 +39,18 @@ And yet… it’s everywhere.
 
 In circles. In waves. In the rhythm of your heartbeat.
 
-So I wondered: *What if we let pi speak—not as a decimal, but as a song?*
+So I wondered: *What if we let pi speak, not as a decimal, but as a song?*
 
 ---
 
 ## Translating Infinity Into Sound
 
-I used **Sonic Pi** — a beautiful, code-based music tool that turns programming into poetry — to map each digit of π to musical elements. Not arbitrarily. Not randomly. With intention.
+I used **Sonic Pi** ,  a beautiful, code-based music tool that turns programming into poetry ,  to map each digit of π to musical elements. Not arbitrarily. Not randomly. With intention.
 
 Here’s how the numbers became notes:
 
 ### 🎼 Melody  
-Each digit (0–9) mapped to a note within a changing scale — mostly C major, but shifting subtly to avoid repetition.  
+Each digit (0–9) mapped to a note within a changing scale ,  mostly C major, but shifting subtly to avoid repetition.  
 > `0 = C`, `1 = D`, `2 = E`, ..., `9 = B`  
 
 The melody doesn’t loop. It never repeats. Just like pi itself.
@@ -66,20 +66,20 @@ Every three digits were averaged to pick a chord:
 > `[3, 1, 4] → average = 2.67 → mapped to C major`  
 > `[5, 9, 2] → average = 5.33 → mapped to F minor`
 
-Only major and minor chords were used — clean, emotionally resonant. No dissonance for dissonance’s sake. Just harmony born from structure.
+Only major and minor chords were used ,  clean, emotionally resonant. No dissonance for dissonance’s sake. Just harmony born from structure.
 
 ### 🎛️ Timbre & Texture  
 Different instruments brought out different layers:  
-- **Piano** carried the melody — clear, intimate.  
-- **Ambient pads** swelled with harmonic averages — like mist over water.  
-- **Deep bass synth** pulsed every fourth digit — grounding the piece in a steady, hypnotic groove.
+- **Piano** carried the melody ,  clear, intimate.  
+- **Ambient pads** swelled with harmonic averages ,  like mist over water.  
+- **Deep bass synth** pulsed every fourth digit ,  grounding the piece in a steady, hypnotic groove.
 
 ### 🔊 Dynamics  
 Volume followed the digit directly:  
 > `0 = softest (pianissimo)`  
 > `9 = loudest (fortissimo)`
 
-A high digit isn’t just a note — it’s a sigh. A cry. A whisper.
+A high digit isn’t just a note ,  it’s a sigh. A cry. A whisper.
 
 ---
 

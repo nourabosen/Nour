@@ -15,16 +15,16 @@
 ---
 ![A quiet hospital hallway, lit by soft morning light](/media/_29edf815-2b60-4942-9a14-78de0dcf89f7_1707153128765_0.jpg)
 
-We all make choices—some small, some life-altering.  
+We all make choices, some small, some life-altering.  
 That extra slice of cake. The late-night cigarette. The soda instead of water. The skip in exercise. The silence when we should have spoken up.
 
 Most of us live with the quiet consequences. But what happens when those choices lead to something irreversible? When a liver fails. When a heart gives out. When a lung can no longer breathe?
 
 And then… there’s an organ waiting. One that could save a life.
 
-But should *that* life be yours—if you helped break it?
+But should *that* life be yours, if you helped break it?
 
-This is the haunting question at the center of Glenda Cooper’s 1997 essay, *“Should those who abuse their bodies pay the price?”* It’s not just about medicine. It’s about justice. About fairness. About what we owe each other—and what we owe ourselves.
+This is the haunting question at the center of Glenda Cooper’s 1997 essay, *“Should those who abuse their bodies pay the price?”* It’s not just about medicine. It’s about justice. About fairness. About what we owe each other, and what we owe ourselves.
 
 ---
 
@@ -33,12 +33,12 @@ This is the haunting question at the center of Glenda Cooper’s 1997 essay, *�
 Cooper doesn’t ask whether people *should* take care of themselves. We all know they should.
 
 She asks something far harder:  
-> *If someone knowingly harms their body through persistent, preventable behavior—should they be denied care when they finally need it most?*
+> *If someone knowingly harms their body through persistent, preventable behavior, should they be denied care when they finally need it most?*
 
 Imagine two patients needing a liver transplant:
 
 - **Patient A**: A lifelong non-smoker, active, balanced diet, never drank excessively.  
-- **Patient B**: Diagnosed with cirrhosis after 20 years of heavy drinking—despite multiple warnings from doctors.
+- **Patient B**: Diagnosed with cirrhosis after 20 years of heavy drinking, despite multiple warnings from doctors.
 
 Both are dying. Only one liver is available.
 
@@ -55,7 +55,7 @@ Is fairness about *who deserves it most*… or about *who needs it most*?
 
 ## Ethics vs. Morality: A Crucial Divide
 
-Cooper makes a thoughtful distinction between *morality* and *ethics*—one I wish more of us remembered.
+Cooper makes a thoughtful distinction between *morality* and *ethics*, one I wish more of us remembered.
 
 - **Morality** is society’s rulebook: *You shouldn’t smoke. You should exercise. You must take care of your body.*  
 - **Ethics** is the deeper question: *How do we treat people who fall short of the rules?*
@@ -65,7 +65,7 @@ The danger comes when we confuse the two.
 It’s easy to judge.  
 It’s harder to hold compassion alongside accountability.
 
-When we say, “They brought this on themselves,” we risk turning healthcare into a meritocracy—where worthiness replaces need. Where dignity becomes conditional.
+When we say, “They brought this on themselves,” we risk turning healthcare into a meritocracy, where worthiness replaces need. Where dignity becomes conditional.
 
 And yet…  
 Healthcare resources are finite. A single transplant costs hundreds of thousands. There are waiting lists. Families crying in corridors. Doctors making impossible calls every day.
@@ -76,9 +76,9 @@ So where do we draw the line?
 
 ## The Flawed Analogies That Undermine the Argument
 
-Cooper tries to strengthen her case with comparisons—but some land awkwardly.
+Cooper tries to strengthen her case with comparisons, but some land awkwardly.
 
-She compares children eating candy to adults choosing alcohol. But children don’t have full autonomy. Adults do. That’s not negligence—it’s agency.
+She compares children eating candy to adults choosing alcohol. But children don’t have full autonomy. Adults do. That’s not negligence, it’s agency.
 
 Then she draws a parallel between doctors allocating organs and Nazis selecting victims.
 
@@ -87,13 +87,13 @@ This is deeply problematic.
 One is about saving lives under scarcity.  
 The other is about exterminating them.
 
-Equating the two doesn’t sharpen the argument—it shatters its moral credibility.
+Equating the two doesn’t sharpen the argument, it shatters its moral credibility.
 
 We don’t need shock value to make this point. The truth is painful enough without sensationalism.
 
 ---
 
-## The Real Question Isn’t About Blame—It’s About Hope
+## The Real Question Isn’t About Blame, It’s About Hope
 
 Perhaps the most uncomfortable truth is this:
 
@@ -125,12 +125,12 @@ Maybe we should also ask:
 
 I don’t believe anyone should be denied care simply because they made mistakes.
 
-But I also believe we owe it to our systems—and to each other—to design care that encourages responsibility, not shame.
+But I also believe we owe it to our systems, and to each other, to design care that encourages responsibility, not shame.
 
 What if, instead of denying treatment, we offered it *with conditions*?  
 - A year of sobriety before transplant eligibility.  
 - Counseling paired with medical intervention.  
-- Community support—not judgment—as part of the healing process.
+- Community support, not judgment, as part of the healing process.
 
 This isn’t about withholding compassion.  
 It’s about extending it *in a way that works*.
@@ -146,7 +146,7 @@ We live in a world that loves to punish failure.
 But healing? Healing requires grace.
 
 Let’s not pretend that personal choice exists in a vacuum.  
-Poverty, mental health, addiction, trauma—they shape our decisions more than we admit.
+Poverty, mental health, addiction, trauma, they shape our decisions more than we admit.
 
 Yet let’s also not ignore the reality of limited resources.  
 We cannot pretend we have infinite time, money, or organs.
@@ -157,12 +157,12 @@ Not “punish” or “reward.”
 Not “they deserve it” or “they don’t.”
 
 But:  
-> *How can we help people reclaim their health—without abandoning our duty to use what we have wisely?*
+> *How can we help people reclaim their health, without abandoning our duty to use what we have wisely?*
 
 Maybe the most ethical thing we can do isn’t to decide who lives or dies.  
 It’s to create a system where fewer people ever reach that breaking point.
 
-Until then—we sit in the gray.  
+Until then, we sit in the gray.  
 With trembling hands.  
 And open hearts.
 
