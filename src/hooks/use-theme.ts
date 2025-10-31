@@ -1,25 +1,27 @@
-import { atom } from "@alxshelepenok/diesel";
-import { useCoilPersistedState } from "@alxshelepenok/diesel-extensions";
-
+import { useState, useEffect } from "react";
 import { getDefaultColorMode } from "@/utils";
 
 interface Theme {
   mode: "dark" | "light";
 }
 
-export const themeAtomKey = "diesel:theme-atom";
-
-const themeAtom = atom<Theme>({
-  key: "themeAtom",
-  default: {
-    mode: getDefaultColorMode(),
-  },
-});
-
 const useTheme = (): readonly [Theme, () => void] => {
-  const [theme, set] = useCoilPersistedState(themeAtom);
+  const [theme, setTheme] = useState<Theme>({
+    mode: getDefaultColorMode(),
+  });
 
-  const toggle = () => set({ mode: theme.mode === "dark" ? "light" : "dark" });
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme({ mode: storedTheme as "dark" | "light" });
+    }
+  }, []);
+
+  const toggle = () => {
+    const newMode = theme.mode === "dark" ? "light" : "dark";
+    setTheme({ mode: newMode });
+    localStorage.setItem("theme", newMode);
+  };
 
   return [theme, toggle];
 };
