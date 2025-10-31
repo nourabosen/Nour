@@ -1,5 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
+
+import { Layout } from "@/components/Layout";
+import { Meta } from "@/components/Meta";
+import { Post } from "@/components/Post";
+import { useSiteMetadata } from "@/hooks";
 import { Node } from "@/types";
 
 interface Props {
@@ -9,7 +14,9 @@ interface Props {
 }
 
 const PostTemplate: React.FC<Props> = ({ data: { markdownRemark } }: Props) => (
-  <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+  <Layout>
+    <Post post={markdownRemark} />
+  </Layout>
 );
 
 export const query = graphql`
@@ -33,5 +40,28 @@ export const query = graphql`
     }
   }
 `;
+
+export const Head: React.FC<Props> = ({ data }) => {
+  const { title, subtitle, url } = useSiteMetadata();
+
+  const {
+    frontmatter: {
+      title: postTitle,
+      description: postDescription = "",
+      thumbnail,
+    },
+  } = data.markdownRemark;
+
+  const description = postDescription || subtitle;
+  const image = thumbnail?.publicURL && url.concat(thumbnail.publicURL);
+
+  return (
+    <Meta
+      title={`${postTitle} - ${title}`}
+      description={description}
+      image={image}
+    />
+  );
+};
 
 export default PostTemplate;
