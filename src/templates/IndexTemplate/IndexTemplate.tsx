@@ -2,10 +2,10 @@ import React from "react";
 
 import { graphql } from "gatsby";
 
+import { Featured } from "@/components/Featured";
 import { Home } from "@/components/Home";
 import { Layout } from "@/components/Layout";
 import { Meta } from "@/components/Meta";
-import { Sidebar } from "@/components/Sidebar";
 import { useSiteMetadata } from "@/hooks";
 import { Edge, PageContext } from "@/types";
 
@@ -17,7 +17,9 @@ interface Props {
       }>;
     };
   };
-  pageContext: PageContext;
+  pageContext: PageContext & {
+    lunrIndex: any;
+  };
 }
 
 const IndexTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
@@ -26,7 +28,7 @@ const IndexTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
 
   return (
     <Layout>
-      <Sidebar isIndex />
+      <Featured />
       <Home edges={edges} pageContext={pageContext} />
     </Layout>
   );

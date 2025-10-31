@@ -1,9 +1,9 @@
 ---
-  title: "Pi as Music - Pi Day 2025"
+  title: "Pi Day Symphony: A Composition from the Digits of Pi"
   date: "2025-03-14T11:00:37.121Z"
   template: "post"
   draft: false
-  slug: "/posts/pi-as-music-pi-day-2025"
+  slug: "/posts/pi-day-symphony-a-composition-from-the-digits-of-pi"
   category: "Mathematics"
   tags:
     - "Mathematics"

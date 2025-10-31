@@ -1,9 +1,9 @@
 ---
-title: "Enhancing Diabetes Management with Machine Learning: The Diabetes Tracker Project"
+title: "Predicting Blood Sugar: A Machine Learning Approach"
 date: "2023-09-15T18:00:37.121Z"
 template: "post"
 draft: false
-slug: "/posts/enhancing-diabetes-management-with-machine-learning"
+slug: "/posts/predicting-blood-sugar-a-machine-learning-approach"
 category: "Machine Learning"
 tags:
   - "Linear Regression"

@@ -1,9 +1,9 @@
 ---
-title: "Crafting Pi's Visual Symphony: My Exploration of Mathematical Artistry"
+title: "Visualizing Pi: A Symphony of Digits"
 date: "2023-09-14T11:00:37.121Z"
 template: "post"
 draft: false
-slug: "/posts/crafting-pis-visual-symphony"
+slug: "/posts/visualizing-pi-a-symphony-of-digits"
 category: "Mathematics"
 tags:
   - "Mathematics"

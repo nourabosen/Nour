@@ -1,0 +1,59 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.featured {
+  background-color: var(--color-background-light);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--color-background);
+  padding: 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .cta {
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+}

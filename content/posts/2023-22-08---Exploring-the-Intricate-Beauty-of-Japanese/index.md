@@ -1,9 +1,9 @@
 ---
-title: "Exploring the Intricate Beauty of Japanese: Where Language Paints Meaning"
+title: "The Art of Japanese: Where Language Paints Meaning"
 date: "2023-08-22T23:00:37.121Z"
 template: "post"
 draft: false
-slug: "/posts/exploring-the-intricate-beauty-of-japanese"
+slug: "/posts/the-art-of-japanese-where-language-paints-meaning"
 category: "Learning"
 tags:
   - "Languages"

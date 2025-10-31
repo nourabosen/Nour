@@ -1,9 +1,9 @@
 ---
-  title: "The Moral Dilemma of Personal Choices: Should Those Who Mistreat Their Bodies Face the Consequences?"
+  title: "The Price of Personal Choice: An Ethical Dilemma"
   date: "2024-02-05T19:00:37.121Z"
   template: "post"
   draft: false
-  slug: "/posts/the-moral-dilemma-of-personal-choices"
+  slug: "/posts/the-price-of-personal-choice-an-ethical-dilemma"
   category: "Philosophy"
   tags:
   - "Lifestyle Choices"

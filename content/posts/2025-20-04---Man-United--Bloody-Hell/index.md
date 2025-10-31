@@ -1,9 +1,9 @@
 ---
-title: "Man United, Bloody Hell"
+title: "Forged in Chaos: A Manchester United Comeback"
 date: "2025-04-18T11:00:37.121Z"
 template: "post"
 draft: false
-slug: "/posts/man-united-bloody-hell"
+slug: "/posts/forged-in-chaos-a-manchester-united-comeback"
 category: "Football"
 tags:
   - "Man United"
