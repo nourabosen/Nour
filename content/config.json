@@ -13,20 +13,20 @@
       "path": "/"
     },
     {
-      "label": "Research Papers",
-      "path": "/pages/papers"
-    },
-    {
-      "label": "About me",
-      "path": "/pages/about"
-    },
-    {
       "label": "Projects",
       "path": "/pages/projects"
     },
     {
       "label": "Digital Garden",
       "path": "https://nourdigitalgarden.netlify.app/#/page/digital%20garden"
+    },
+    {
+      "label": "Research Papers",
+      "path": "/pages/papers"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
     }
   ],
   "author": {
