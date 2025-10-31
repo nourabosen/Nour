@@ -154,4 +154,9 @@ figcaption {
     word-break: break-all;
     overflow-x: auto;
   }
+
+  .language-python,
+  .language-ruby {
+    font-size: 0.8rem;
+  }
 }
