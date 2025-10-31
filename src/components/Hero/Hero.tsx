@@ -7,7 +7,7 @@ const Hero = () => {
     <div className={styles.hero}>
       <div className={styles.container}>
         <h1 className={styles.title}>NOur Abosen</h1>
-        <h2 className={styles.subtitle}>A mathematician in the making; a dreamer, loyal to her illusions.</h2>
+        <h2 className={styles.subtitle}>A mathematician in the making; a dreamer, devoted.</h2>
         <p className={styles.tagline}>
           Exploring the intersections of code, creativity, and chaos.
         </p>
