@@ -1,5 +1,5 @@
 {
-  "title": "Nour's Blog",
+  "title": "NOur's Blog",
   "url": "https://nourabosen.netlify.app/",
   "subtitle": "Where illusions and mathematics collide.",
   "copyright": "© All rights reserved.",
@@ -30,7 +30,7 @@
     }
   ],
   "author": {
-    "name": "NOur Abosen",
+    "name": "Nour Abosen",
     "photo": "/photo.jpg",
     "bio": "A devoted dreamer, unwavering in her pursuit of illusions.",
     "contacts": {

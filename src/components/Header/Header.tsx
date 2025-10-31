@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          Nour's Blog
+          NOur's Blog
         </Link>
         <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ""}`}>
           <ul className={styles.navList}>
