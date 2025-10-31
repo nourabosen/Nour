@@ -11,7 +11,10 @@ export interface PagesQueryResult {
 const pagesQuery = async (graphql: CreatePagesArgs["graphql"]) => {
   const result = await graphql<PagesQueryResult>(`
     {
-      allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
+      allMarkdownRemark(
+        filter: { frontmatter: { draft: { ne: true } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
         edges {
           node {
             frontmatter {
