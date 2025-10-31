@@ -16,18 +16,20 @@ const Contacts: React.FC = () => {
   const { author } = useSiteMetadata();
   const { contacts } = author;
 
+  const { leetcode, letterboxd, ...restContacts } = contacts;
+
   return (
     <div className={styles.contacts}>
       <ul className={styles.list}>
-        {(Object.keys(contacts) as Array<keyof typeof ICONS>).map((name) =>
-          contacts[name] ? (
+        {(Object.keys(restContacts) as Array<keyof typeof ICONS>).map((name) =>
+          restContacts[name] ? (
           <li className={styles.item} key={name}>
             {name === "email" ? (
               <span
                 className={styles.link}
                 onClick={() => {
                   window.location.href =
-                    "mailto:" + atob(getContactHref(name, contacts[name]));
+                    "mailto:" + atob(getContactHref(name, restContacts[name]));
                 }}
               >
                 <Icon name={name} icon={getIcon(name)} />
@@ -35,7 +37,7 @@ const Contacts: React.FC = () => {
             ) : (
               <a
                 className={styles.link}
-                href={getContactHref(name, contacts[name])}
+                href={getContactHref(name, restContacts[name])}
                 target="_blank"
                 rel="noopener noreferrer"
               >
