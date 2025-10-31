@@ -12,10 +12,12 @@ thumbnail: "./media/Bruno_1745098291580_0.png"
 ---
 
 ![Bruno Fernandes](/media/Bruno_1745098291580_0.png)
-> *“Take me home, United Road,
-> To the place I belong,
+> *“Take me home
+> Take me home, United Road
+> To the place, I belong
 > To Old Trafford,
-> To see United.”*
+> To see United
+> Take me home, United Road.”*
 
 You know that chant. You’ve sung it when the crowd was roaring. You’ve whispered it when you were alone in your bedroom at 2 a.m., staring at the ceiling after another crushing loss. And last night? You screamed it — hoarse, tear-streaked, utterly broken — as Harry Maguire’s header crashed into the net and time ran out on Lyon’s dreams.
 That match wasn’t football. It was pure, unfiltered *emotion*.
