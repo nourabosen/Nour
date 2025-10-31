@@ -1,6 +1,6 @@
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #657b83;
+  color: var(--color-text-light);
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-size: 1em;
   -ms-hyphens: none;
