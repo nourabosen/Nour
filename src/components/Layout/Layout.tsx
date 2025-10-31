@@ -25,7 +25,9 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
     <div className={styles.layout}>
       <Meta title={title} description={subtitle} />
       <Header />
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <div className={styles.container}>{children}</div>
+      </main>
       <Footer />
     </div>
   );

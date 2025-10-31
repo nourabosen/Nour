@@ -153,10 +153,6 @@ figcaption {
     white-space: pre-wrap !important;
     word-break: break-all !important;
     overflow-x: auto !important;
-  }
-
-  .language-python,
-  .language-ruby {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
   }
 }
