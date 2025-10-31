@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Meta from "@/components/Meta/Meta";
 import { Node } from "@/types";
 
 interface Props {
