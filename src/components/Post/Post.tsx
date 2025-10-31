@@ -30,9 +30,9 @@ const Post: React.FC<Props> = ({ post }: Props) => {
             date={date}
             tags={tags || []}
             tagSlugs={tagSlugs || []}
+            tableOfContents={isClient && <TableOfContents html={html} />}
           />
         </div>
-        {isClient && <TableOfContents html={html} />}
       </div>
     </div>
   );
