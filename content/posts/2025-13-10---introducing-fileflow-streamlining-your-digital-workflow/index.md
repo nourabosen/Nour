@@ -14,8 +14,6 @@ description: "Discover how FileFlow can help you manage your files more efficien
 thumbnail: "./media/Searching.png"
 ---
 
-## Introducing FileFlow: Your Ultimate File Management Solution
-
 In a digital world overflowing with files, documents, and data, staying organized is more challenging than ever. Welcome to the official launch of FileFlow, a powerful Ulauncher extension designed to bring order to the chaos and streamline your digital workflow by leveraging the speed of indexed search.
 
 ### What is FileFlow?
