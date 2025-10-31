@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import * as styles from "./TableOfContents.module.scss";
+import * as styles from "./MobileTableOfContents.module.scss";
 
 interface Heading {
   id: string;
@@ -9,12 +9,11 @@ interface Heading {
 
 interface Props {
   html: string;
-  isMobile?: boolean;
 }
 
-export const TableOfContents: React.FC<Props> = ({ html }) => {
+export const MobileTableOfContents: React.FC<Props> = ({ html }) => {
   const [headings, setHeadings] = useState<Heading[]>([]);
-  const [activeId, setActiveId] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const parser = new DOMParser();
@@ -29,23 +28,6 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
       });
     });
     setHeadings(newHeadings);
-
-    const handleScroll = () => {
-      const headingElements = newHeadings.map((h) => document.getElementById(h.id));
-      const activeHeading = headingElements.find((el) => {
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          return rect.top >= 0 && rect.top <= 150;
-        }
-        return false;
-      });
-      if (activeHeading) {
-        setActiveId(activeHeading.id);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, [html]);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -63,11 +45,14 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
         behavior: "smooth",
       });
     }
+    setIsOpen(false);
   };
 
   return (
-    <nav className={styles.toc}>
-      <h3 className={styles.title}>On this page</h3>
+    <nav className={`${styles.toc} ${isOpen ? styles.isOpen : ""}`}>
+      <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
+        <h3 className={styles.title}>On this page</h3>
+      </button>
       <ul className={styles.list}>
         {headings.map((heading) => (
           <li
@@ -76,7 +61,7 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
           >
             <a
               href={`#${heading.id}`}
-              className={`${styles.link} ${activeId === heading.id ? styles.active : ""}`}
+              className={styles.link}
               onClick={(e) => handleLinkClick(e, heading.id)}
             >
               {heading.text}

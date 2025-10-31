@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { TableOfContents } from "@/components/TableOfContents";
+import { MobileTableOfContents } from "@/components/MobileTableOfContents/MobileTableOfContents";
 import type { Node } from "@/types";
 
 import { Content } from "./Content";
@@ -30,7 +31,7 @@ const Post: React.FC<Props> = ({ post }: Props) => {
             date={date}
             tags={tags || []}
             tagSlugs={tagSlugs || []}
-            tableOfContents={isClient && <TableOfContents html={html} isMobile />}
+            tableOfContents={isClient && <MobileTableOfContents html={html} />}
           />
         </div>
         <div className={styles.toc}>
