@@ -15,6 +15,7 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
         filter: {
           frontmatter: { draft: { ne: true }, template: { eq: "post" } }
         }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {

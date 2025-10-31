@@ -9,12 +9,12 @@ const Featured = () => {
         <h2 className={styles.title}>Featured Work</h2>
         <div className={styles.grid}>
           <Link to="/posts/introducing-fileflow-streamlining-your-digital-workflow" className={styles.card}>
-            <h3>Fileflow</h3>
+            <h3>FileFlow</h3>
             <p>Streamlining your digital workflow.</p>
             <span className={styles.cta}>Explore the Project</span>
           </Link>
           <Link to="/posts/unlock-your-second-brain-with-insightminer" className={styles.card}>
-            <h3>Insightminer</h3>
+            <h3>InsightMiner</h3>
             <p>Unlock your second brain.</p>
             <span className={styles.cta}>See the Project</span>
           </Link>
