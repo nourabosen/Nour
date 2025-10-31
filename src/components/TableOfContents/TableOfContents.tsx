@@ -9,11 +9,13 @@ interface Heading {
 
 interface Props {
   html: string;
+  isMobile?: boolean;
 }
 
-export const TableOfContents: React.FC<Props> = ({ html }) => {
+export const TableOfContents: React.FC<Props> = ({ html, isMobile }) => {
   const [headings, setHeadings] = useState<Heading[]>([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [activeId, setActiveId] = useState("");
 
   useEffect(() => {
     const parser = new DOMParser();
@@ -28,6 +30,23 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
       });
     });
     setHeadings(newHeadings);
+
+    const handleScroll = () => {
+      const headingElements = newHeadings.map((h) => document.getElementById(h.id));
+      const activeHeading = headingElements.find((el) => {
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          return rect.top >= 0 && rect.top <= 150;
+        }
+        return false;
+      });
+      if (activeHeading) {
+        setActiveId(activeHeading.id);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [html]);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -48,11 +67,34 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
     setIsOpen(false);
   };
 
+  if (isMobile) {
+    return (
+      <nav className={`${styles.toc} ${styles.mobile} ${isOpen ? styles.isOpen : ""}`}>
+        <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
+          <h3 className={styles.title}>On this page</h3>
+        </button>
+        <ul className={styles.list}>
+          {headings.map((heading) => (
+            <li
+              key={heading.id}
+              className={`${styles.item} ${styles[`level${heading.level}`]}`}
+            >
+              <a
+                href={`#${heading.id}`}
+                className={styles.link}
+                onClick={(e) => handleLinkClick(e, heading.id)}
+              >
+                {heading.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
+  }
+
   return (
-    <nav className={`${styles.toc} ${isOpen ? styles.isOpen : ""}`}>
-      <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
-        <h3 className={styles.title}>On this page</h3>
-      </button>
+    <nav className={styles.toc}>
       <ul className={styles.list}>
         {headings.map((heading) => (
           <li
@@ -61,7 +103,7 @@ export const TableOfContents: React.FC<Props> = ({ html }) => {
           >
             <a
               href={`#${heading.id}`}
-              className={styles.link}
+              className={`${styles.link} ${activeId === heading.id ? styles.active : ""}`}
               onClick={(e) => handleLinkClick(e, heading.id)}
             >
               {heading.text}
