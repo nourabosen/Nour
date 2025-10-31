@@ -126,6 +126,11 @@
   color: var(--color-text-light);
   flex-grow: 1;
   margin-bottom: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 
   @include breakpoint-md {
     font-size: 1rem;
