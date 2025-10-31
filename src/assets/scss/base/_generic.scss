@@ -2,23 +2,31 @@
 @import "../mixins";
 
 html {
-  font-size: $typographic-root-font-size;
+  font-size: 16px;
+
+  @include breakpoint-md {
+    font-size: 17px;
+  }
+
+  @include breakpoint-lg {
+    font-size: 18px;
+  }
 }
 
 body {
   background: var(--color-background);
   color: var(--color-text);
   font-family: $typographic-font-family;
-  font-size: $typographic-base-font-size;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: $typographic-base-line-height;
+  line-height: 1.6;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
 
-h2,
 h1,
+h2,
 h3,
 h4,
 h5,
@@ -26,60 +34,45 @@ h6 {
   font-family: $typographic-header-font-family;
   font-weight: 700;
   color: var(--color-primary);
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: $typographic-base-font-size * 2;
-  @include line-height(2);
-  @include margin-top(4);
-  @include margin-bottom(1);
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
 
   @include breakpoint-md {
-    font-size: $typographic-base-font-size * 2.5;
+    font-size: 2.5rem;
   }
 }
 
 h2 {
-  font-size: $typographic-base-font-size * 1.5;
-  @include line-height(1.5);
-  @include margin-top(2);
-  @include margin-bottom(0.5);
+  font-size: 1.75rem;
+  margin: 1.75rem 0 1rem;
 
   @include breakpoint-md {
-    font-size: $typographic-base-font-size * 1.6875;
+    font-size: 2rem;
   }
 }
 
 h3 {
-  font-size: $typographic-base-font-size * 1.25;
-  @include line-height(1);
-  @include margin-top(2);
-  @include margin-bottom(0.5);
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
 
   @include breakpoint-md {
-    font-size: $typographic-base-font-size * 1.375;
+    font-size: 1.75rem;
   }
 }
 
 h4 {
-  font-size: $typographic-base-font-size * 1.2;
-  @include line-height(1);
-  @include margin-top(1.5);
-  @include margin-bottom(0.5);
+  font-size: 1.25rem;
+  margin: 1.25rem 0 0.75rem;
 }
 
-h5 {
-  font-size: $typographic-base-font-size;
-  @include line-height(1);
-  @include margin-top(2.5);
-  @include margin-bottom(0.5);
-}
-
+h5,
 h6 {
-  font-size: $typographic-base-font-size;
-  @include line-height(1);
-  @include margin-top(2.5);
-  @include margin-bottom(0.5);
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
 }
 
 img {
@@ -116,53 +109,36 @@ strong {
 
 ul {
   list-style: square;
-  @include margin-bottom(1);
+  margin-bottom: 1rem;
 
   & li {
-    margin-bottom: 10px;
-    padding: 0 5px;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
 p {
-  @include line-height(1);
-  @include margin-bottom(1);
+  margin-bottom: 1rem;
 }
 
 blockquote {
   font-style: italic;
-  padding: 0;
+  padding: 0 1.5rem;
   text-align: center;
+  border-left: 4px solid var(--color-primary);
+  margin: 1.5rem 0;
 }
 
 figure {
   display: block;
-  height: auto;
+  margin: 1.5rem 0;
   width: 100%;
 }
 
 figcaption {
-  @include line-height(0.75);
-  @include margin-top(0.25);
-  color: var(--color-typographic-base-font);
-  font-size: $typographic-small-font-size;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
   font-style: italic;
-  margin-bottom: 0;
+  margin-top: 0.5rem;
   text-align: center;
-}
-
-@include breakpoint-sm {
-  figure.float-left,
-  figure.float-right {
-    max-width: 310px;
-    @include padding(0, 1, 0, 1);
-  }
-
-  .float-right {
-    float: right;
-  }
-
-  .float-left {
-    float: left;
-  }
 }
