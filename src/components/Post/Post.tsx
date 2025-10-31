@@ -24,13 +24,13 @@ const Post: React.FC<Props> = ({ post }: Props) => {
     <div className={styles.post}>
       <div className={styles.container}>
         <div className={styles.content}>
+          {isClient && <TableOfContents html={html} isMobile />}
           <Content
             body={html}
             title={title}
             date={date}
             tags={tags || []}
             tagSlugs={tagSlugs || []}
-            tableOfContents={isClient && <TableOfContents html={html} isMobile />}
           />
         </div>
         <div className={styles.toc}>
