@@ -30,25 +30,25 @@ FileFlow is more than just a simple file search. Here are some of the features t
 
 At its core, FileFlow uses your system's file index to deliver search results in a fraction of a second. Just type `s` followed by your search term, and watch the results appear instantly.
 
-![A general file search](./media/s kindle.jpeg)
+![A general file search](./media/skindle.jpeg)
 
 #### Directory-Only Search
 
 Need to find a folder? No problem. Use the `dir` keyword to filter your search and show only directories. This is perfect for quickly navigating your filesystem.
 
-![A directory-only search](./media/s dir kindle.jpeg)
+![A directory-only search](./media/sdirkindle.jpeg)
 
 #### Hardware Drive Scanning
 
 One of FileFlow's standout features is its ability to search mounted hardware drives. By using the `hw` keyword, you can extend your search to include external hard drives, USB sticks, and other removable media.
 
-![A hardware-only search](./media/s hw kindle.jpeg)
+![A hardware-only search](./media/shwkindle.jpeg)
 
 #### Advanced Hardware and Directory Search
 
 Combine the `hw` and `dir` keywords to perform a highly specific search for directories located only on your mounted hardware. It's the ultimate tool for finding that one specific folder on that one specific drive.
 
-![A hardware and directory search](./media/s hw dir kindle.jpeg)
+![A hardware and directory search](./media/shwdirkindle.jpeg)
 
 #### More Than Just Searching
 
