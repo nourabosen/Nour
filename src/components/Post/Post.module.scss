@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    align-items: flex-start;
 
     @include-md-and-down {
       flex-direction: column;
@@ -17,6 +18,16 @@
   .content {
     max-width: $layout-post-width;
     width: 100%;
+  }
+
+  .toc {
+    width: 250px;
+    position: sticky;
+    top: 80px;
+
+    @include-md-and-down {
+      display: none;
+    }
   }
 
   .footer {
