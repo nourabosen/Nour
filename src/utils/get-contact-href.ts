@@ -16,6 +16,7 @@ const getContactHref = (name: string, contact: string) => {
     facebook: `https://www.facebook.com/${contact}`,
     instagram: `https://www.instagram.com/${contact}`,
     linkedin: `https://www.linkedin.com/in/${contact}`,
+    goodreads: `https://www.goodreads.com/${contact}`,
     leetcode: `https://leetcode.com/u/${contact}/`,
     youtube: `https://www.youtube.com/channel/${contact}`,
     mastodon: `${contact}`,
