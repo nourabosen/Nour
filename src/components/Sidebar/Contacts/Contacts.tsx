@@ -16,7 +16,7 @@ const Contacts: React.FC = () => {
   const { author } = useSiteMetadata();
   const { contacts } = author;
 
-  const { leetcode, letterboxd, ...restContacts } = contacts;
+  const { leetcode, letterboxd, goodreads, ...restContacts } = contacts;
 
   return (
     <div className={styles.contacts}>
@@ -65,6 +65,16 @@ const Contacts: React.FC = () => {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLetterboxd} />
+        </a>
+      </li>
+      <li className={styles.item} key="goodreads">
+        <a
+          className={styles.link}
+          href="https://www.goodreads.com/nourabosen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="goodreads" icon={getIcon("goodreads")} />
         </a>
       </li>
     </ul>
